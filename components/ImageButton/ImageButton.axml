@@ -1,0 +1,11 @@
+<view onTap="onTap" class="image-button {{hasBackground ? 'image-button-background' : ''}}" style="background-image: {{backgroundIllustration && hasBackground ? 'url('+backgroundIllustration+')' : ''}}; background-color:{{backgroundColor && hasBackground ? backgroundColor : ''}}; background-position:{{backgroundIllustrationMarginRight && hasBackground ? 'center right '+backgroundIllustrationMarginRight : ''}}; {{buttonExtraStyle || ''}}" >
+  <view class="image-button-content" style="{{imageButtonContentExtraStyle}}">
+    <icon
+      iconName="{{iconName}}" 
+      width="{{iconWidth}}" 
+      height="{{iconHeight}}"
+      otherStyles="display: flex; margin-right: 32rpx; {{iconExtraStyle}}"
+    />
+    <view class="image-button-label {{hasBackground ? 'image-button-label-image': ''}}" style="{{imageButtonLabelExtraStyle}}">{{label}}</view>
+  </view>
+</view>

@@ -1,0 +1,16 @@
+ <view>
+      <view id={{componentID}} aria-label={{componentID}} class='vfmp__select' onTap="onSelectClick">
+     
+          <view class="vfmp__column" a:if="{{optionsText != ''}}">
+            <view class="vfmp__select__title">{{label}}</view>
+            <view class="vfmp__select__description">{{optionsText}}</view>
+          </view>
+
+          <view class='vfmp__select__title' a:else>{{label}}</view>
+
+        <view class='vfmp__select__right-element'>
+          <icon height="32" iconName='chevron-right.svg' color='#E60000' />
+        </view>
+      </view>
+      <view class='vfmp__select__separator' />
+    </view>

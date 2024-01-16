@@ -1,0 +1,9 @@
+{
+  "pullRefresh": false,
+  "usingComponents": {
+    "input-mpesa": "/components/Input/Input",
+    "m-nav": "/components/NavBar/NavBar",
+    "error-modal": "/components/ErrorModal/ErrorModal",
+    "m-button": "/components/mpesa/m-btn/m-btn"
+  }
+}

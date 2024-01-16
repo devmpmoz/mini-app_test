@@ -1,0 +1,98 @@
+<view class="container">
+  <m-nav size="small" title="{{ i18n.favourites.appBarTitle }}" />
+
+  <view class="body">
+    <image-button label="{{ i18n.favourites.addFavouriteLbl }}" onButtonClick="goAddFavourite" />
+
+    <block a:if={{ favouriteMeters && favouriteMeters.length > 0 }}>
+      <list header="{{ i18n.favourites.listTitle }}" class radius="{{radius}}">
+        <block
+          a:for="{{ favouriteMeters }}"
+          a:for-index="id"
+          a:for-item="meter"
+          key="meter"
+        >
+          <list-row
+            onTap="{{selectFav ? 'goToPayment' : 'openSheet'}}"
+            label="{{meter.name || ''}}"
+            description="{{meter.reference || ''}}"
+            trailingIconSrc="/assets/icons/star-b.svg"
+            leadingIconSrc="{{selectFav && meter.reference === selectedFav.reference ? '/assets/icons/hi_tick_outline.svg' : ''}}"
+            value="{{meter}}"
+            showLeadingArrow="{{false}}"
+          />
+          <m-divider/>
+        </block>
+      </list>
+    </block>
+    <view a:else class="list-empty">
+      <image style="height: 192rpx" src="/assets/illustrations/hi_favourites_empty.svg" />
+      <text class="empty-title">{{ i18n.favourites.emptyTitle }}</text>
+    </view>
+    
+  </view>
+
+  <m-sheet ref="saveSheetRef" swipe roundedTop>
+    <m-card class="bottom-sheet-card">
+      <view class="dash" />
+      <m-card-content class="bottom-sheet-title-wrapper">
+        <view class="bottom-sheet-title" style="font-weight: 700; font-family: VodafoneRg-Regular;">
+          {{ i18n.favourites.bottomSheetTitle }}
+        </view>
+      </m-card-content>
+      <m-card-actions class="bottom-sheet-actions-wrapper">
+        <list-row
+          onTap="goEditFavourite"
+          label="{{ i18n.favourites.editFavourite }}"
+          trailingIconSrc="/assets/icons/si_edit-b.svg"
+          showLeadingArrow="{{false}}"
+        />
+        <m-divider/>
+        <list-row
+          onTap="goConfirmRemoveFav"
+          label="{{ i18n.favourites.deleteFavourite }}"
+          trailingIconSrc="/assets/icons/si_delete-r.svg"
+          showLeadingArrow="{{false}}"
+        />
+      </m-card-actions>
+    </m-card>
+  </m-sheet>
+
+</view>
+<m-alert-modal title="{{ alertModal.title }}" body1="{{ alertModal.body1 }}" showBodySlot="{{true}}" ref="saveModalRef">
+  <image slot="image" style="height: 175rpx; width: 175rpx" src="{{ alertModal.image }}" />
+
+  <view slot="body1" class="body1" style="font-family: VodafoneRg-Regular">
+    <text a:if="{{ alertModal.body1.split('{{name}}')[0] }}">
+      {{ alertModal.body1.split("{{name}}")[0] }}
+    </text>
+    <text a:if="{{ alertModal.name1 }}" style="font-weight: 700;">
+       "{{alertModal.name1}}" 
+    </text>
+    <text a:if="{{ alertModal.body1.split('{{name}}')[1] }}">
+      {{ alertModal.body1.split('{{name}}')[1] }}
+    </text>
+  </view>
+
+  <view slot="action" class="action-section m-flex m-flex-column p-16">
+    <m-button onTap="{{ alertModal.primaryBtnOnTap }}" loading="{{isLoading}}">
+      {{ alertModal.primaryBtnLbl }}
+    </m-button>
+    <block a:if="{{ alertModal.secondaryBtnLbl }}">
+      <view class="my-8" />
+      <m-button type="secondary" onTap="{{ alertModal.secondaryBtnOnTap }}" loading="{{isLoading}}">
+        {{ alertModal.secondaryBtnLbl }}
+      </m-button>
+    </block>
+  </view>
+</m-alert-modal>
+
+<toast
+  content="{{toastContent}}" 
+  duration="{{5000}}" 
+  showMask="{{false}}" 
+  visible="{{showToast}}"
+  onClose="onToastClose" 
+  data-index="1"
+  type="{{toastType}}"
+/>

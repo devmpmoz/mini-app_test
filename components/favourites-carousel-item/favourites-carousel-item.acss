@@ -1,0 +1,16 @@
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  width: calc(100vw - 30px);
+  height: 140px;
+  margin-right: 8px;
+  background-color: #ffffff;
+  border-radius: 15rpx;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.badge {
+  padding: 5px 12px;
+  border-radius: 20px;
+  background-color: orange;
+}

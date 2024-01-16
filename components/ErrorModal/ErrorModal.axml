@@ -1,0 +1,15 @@
+<m-alert-modal title="{{ errorInfo.title }}" body1="{{ errorInfo.description }}" ref="setAlertRef">
+  <image slot="image" style="height: 175rpx; width: 175rpx" src="{{ errorInfo.image }}" />
+
+  <view slot="action" class="action-section m-flex m-flex-column p-16">
+    <m-button onTap="onTapPrimaryBtn">
+      {{ errorInfo.primaryBtnLabel }}
+    </m-button>
+    <block a:if="{{ errorInfo.secondaryBtnLabel }}">
+      <view class="my-8" />
+      <m-button type="secondary" onTap="onTapSecondaryBtn">
+        {{ errorInfo.secondaryBtnLabel }}
+      </m-button>
+    </block>
+  </view>
+</m-alert-modal>

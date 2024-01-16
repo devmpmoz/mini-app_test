@@ -1,0 +1,27 @@
+<view id={{componentID}} aria-label={{componentID }} style={{extraIconStyle}} class="vfmp-information-card__container {{containerClassName}}">
+      <view class="vfmp-information-card__inner">
+        <view class="vfmp-information-card__inner_left-element">
+          <view class="vfmp-information-card__upper-row">{{title}}</view>
+          <view
+            class="vfmp-information-card__bottom-row"
+            id={{componentID ? (isInformationShown ? componentID + '-informationDisplayed' : componentID + '-informationHidden') : undefined}}
+            aria-label={{componentID ? (isInformationShown ? componentID + '-informationDisplayed' : componentID + '-informationHidden') : undefined}}>
+            {{isInformationShown ? content : '*********'}}
+          </view>
+        </view>
+        <view style="margin: 'auto', marginTop: '0' ">
+        
+            <view a:if="{{isLoading}}">
+              <icon width="42" height="26" iconColor={{toggleBackgroundColor}} iconName='loader' />
+            </view>
+        
+            <toggle a:else
+              checked={{isInformationShown}}
+              toggleDisabled={{toggleDisabled}}
+              backgroundColor={{toggleBackgroundColor}}
+              borderColor={{toggleBorderColor}}
+              componentID={{componentID + '-toggle'}}
+            />
+        </view>
+      </view>
+    </view>

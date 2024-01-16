@@ -1,0 +1,53 @@
+<view class="container">
+  <m-nav size="small" title="{{ i18n.replaceFavourite.appBarTitle }}"/>
+
+  <view class="body">
+    <view class="info-message">
+      {{ i18n.replaceFavourite.warningLbl }}
+    </view>
+
+    <list header="{{ i18n.replaceFavourite.listTitle }}" class radius="{{radius}}">
+      <block a:for="{{ favouriteMeters }}" a:for-index="id" a:for-item="meter" key="meter">
+        <list-row onTap="confirmReplace" label="{{ meter.name }}" description="{{ meter.reference }}" trailingIconSrc="/assets/icons/star-b.svg" value="{{ meter }}" showLeadingArrow="{{ false }}"/>
+        <m-divider/>
+      </block>
+    </list>
+  </view>
+</view>
+<m-alert-modal title="{{ alertModal.title }}" body1="{{ alertModal.body1 }}" showBodySlot="{{true}}" ref="saveModalRef">
+  <image
+    slot="image"
+    style="height: 175rpx; width: 175rpx"
+    src="{{ alertModal.image }}"
+  />
+
+  <view slot="body1" class="body1" style="font-family: VodafoneRg-Regular">
+    <text a:if="{{ alertModal.body1.split('{{old_name}}')[0] }}">
+      {{ alertModal.body1.split("{{old_name}}")[0] }}
+    </text>
+    <text a:if="{{ alertModal.name1 }}" style="font-weight: 700;">
+       "{{alertModal.name1}}" 
+    </text>
+    <text a:if="{{ alertModal.body1.split('{{old_name}}')[1].split('{{new_name}}')[0] }}">
+      {{ alertModal.body1.split('{{old_name}}')[1].split('{{new_name}}')[0] }}
+    </text>
+    <text a:if="{{ alertModal.name2 }}" style="font-weight: 700;">
+       "{{alertModal.name2}}" 
+    </text>
+    <text a:if="{{ alertModal.body1.split('{{new_name}}')[1] }}">
+      {{ alertModal.body1.split('{{new_name}}')[1] }}
+    </text>
+  </view>
+
+  <view slot="action" class="action-section m-flex m-flex-column p-16">
+    <m-button onTap="{{ alertModal.primaryBtnOnTap }}" loading="{{isLoading}}">
+      {{ alertModal.primaryBtnLbl }}
+    </m-button>
+    <block a:if="{{ alertModal.secondaryBtnLbl }}">
+      <view class="my-8" />
+      <m-button type="secondary" onTap="{{ alertModal.secondaryBtnOnTap }}" loading="{{isLoading}}">
+        {{ alertModal.secondaryBtnLbl }}
+      </m-button>
+    </block>
+  </view>
+</m-alert-modal>

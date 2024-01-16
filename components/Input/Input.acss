@@ -1,0 +1,175 @@
+@font-face {
+  font-family: VodafoneRg-Regular;
+  src: url('/assets/fonts/VodafoneRg.ttf');
+}
+
+@font-face {
+  font-family: VodafoneRg-Bold;
+  src: url('/assets/fonts/VodafoneRgBd.ttf');
+}
+
+.vfmp-input__container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.vfmp-input__container input::-webkit-outer-spin-button,
+.vfmp-input__container input::-webkit-inner-spin-button {
+  /* display: none;
+	 <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.vfmp-input__container input[type='number'] {
+  -moz-appearance: textfield;
+  /* Firefox */
+}
+
+.vfmp-input__container .vfmp-suggestion-list__container {
+  margin-top: 16px;
+}
+
+.vfmp-input__clear-input-wrapper {
+  position: relative;
+}
+
+.vfmp-input__clear-input-btn {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 14px;
+  cursor: pointer;
+}
+
+.vfmp-input__clear-input-btn.has-value {
+  display: block;
+}
+
+.f-input__helper-default {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.34;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2px;
+  color: #727272
+}
+
+.vfmp-input__error .vfmp-input__input,
+.vfmp-budget__error .vfmp-input__input {
+  border-color: #dc3545;
+}
+
+.vfmp-input__error .vfmp-input__bottom-text {
+  color: #dc3545;
+  font-size: 12px;
+}
+
+.vfmp-input__error .vfmp-input__description {
+  color: #dc3545;
+}
+
+.vfmp-input__looseError .vfmp-input__input {
+  border-color: #dc3545;
+}
+
+.vfmp-budget__error .vfmp-input__description {
+  color: #dc3545;
+}
+
+.vfmp-budget__error .vfmp-input__description-hero {
+  color: #dc3545;
+}
+
+.vfmp-input__label-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 3px;
+}
+
+.vfmp-input__label {
+  font-family: VodafoneRg-Regular, 'Segoe UI', Verdana, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+.vfmp-input__description {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 3px;
+  font-family: VodafoneRg-Regular, 'Segoe UI', Verdana, sans-serif;
+  font-size: 14px;
+  color: #666;
+}
+
+.vfmp-input__description-hero {
+  font-family: VodafoneRg-Bold, 'Segoe UI', Verdana, sans-serif;
+  font-size: 14px;
+  color: #333333;
+  line-height: 16px;
+}
+
+.vfmp-input__input {
+  height: 44px;
+  background: #fff;
+  border: 1px solid #999;
+  border-radius: 6px;
+  padding: 0 16px;
+  font-family: VodafoneRg-Regular, 'Segoe UI', Verdana, sans-serif;
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+  line-height: 22px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.vfmp-input__input:invalid {
+  box-shadow: none;
+}
+
+.vfmp-input__input--disabled {
+  background: #EBEBEB;
+  color: #333333;
+
+}
+
+
+.vfmp-input__input--button {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  background: #333;
+  margin: 0;
+  margin-left: 8px;
+  border-radius: 6px;
+  outline: none;
+}
+
+.vfmp-input__input--search-icon {
+  padding-left: 56px;
+  background-image: url(/assets/images/ic_search.png);
+  background-repeat: no-repeat;
+  background-position: 16px center;
+  background-size: 26px 26px;
+}
+
+.vfmp-input__input:focus.vfmp-input__input--clear-icon,
+.vfmp-input__input:active.vfmp-input__input--clear-icon {
+  display: block;
+}
+
+.vfmp-input__input--clear-icon {
+  padding-right: 32px;
+}
+
+.vfmp-input__bottom-text {
+  font-family: VodafoneRg-Regular, 'Segoe UI', Verdana, sans-serif;
+  font-size: 14px;
+  color: #666;
+}

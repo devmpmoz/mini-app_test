@@ -1,0 +1,13 @@
+<view class="vfmp-toggle__container">
+<switch 
+      id="{{componentID}}"
+      checked="{{toggleChecked}}"
+      data-value="{{value}}"
+      disabled={{toggleDisabled}} 
+      loading= {{toggleLoading}}
+      color="{{toggleColor}}"
+      checkedText="{{checkedText}}"
+      uncheckedText="{{uncheckedText}}"
+      className="vfmp-toggle__indicator {{toggleChecked ? 'vfmp-toggle__indicator--on' : ''}} {{toggleDisabled ? 'vfmp-toggle__indicator--disabled' : ''}}"
+    />
+</view>

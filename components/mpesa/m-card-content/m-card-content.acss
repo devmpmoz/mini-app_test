@@ -1,0 +1,6 @@
+.m-card__content {
+  font-family: Vodafone, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+}

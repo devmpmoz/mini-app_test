@@ -1,0 +1,128 @@
+<view id={{componentID}} aria-label={{componentID}} class="vfmp-input__container {{class}} {{errorMsg ? 'vfmp-input__error' : ''}} {{ type == 'amountWithBalance' && value > balance ? 'vfmp-budget__error' : ''}}">
+  <view class="vfmp-input__label-container">
+    <view class="vfmp-input__label">{{label}}</view>
+    <view class="vfmp-input__description">
+      {{description}}
+      <view class="vfmp-input__description-hero">
+        {{ type == 'amountWithBalance' ? balance + ' MT' : descriptionHero}}
+      </view>
+    </view>
+  </view>
+  <view a:if="{{hasButton}}" style="display: flex">
+    <view
+      a:if="{{isClearIconVisible == 'true'}}"
+      class="vfmp-input__clear-input-wrapper"
+      style="flex: 1 1 0"
+    >
+
+      <input
+        class="vfmp-input__input {{searchIconVisible == 'true' ? 'vfmp-input__input--search-icon' : ''}}  {{inputDisabled ? 'vfmp-input__input--disabled' : ''}}"
+        id="{{id}}"
+        step="any"
+        value="{{value}}"
+        maxlength="{{maxlength}}"
+        onBlur="onBlur"
+        onInput="onInput"
+        disabled={{inputDisabled}}
+        type={{type == 'amount' || type == 'amountWithBalance' ? 'digit' : type}}
+        inputMode={{inputMode}}
+        id={{componentID + '-input'}}
+        aria-label={{componentID + '-input'}}
+        data-field={{field}}
+      />
+
+      <view
+        class="vfmp-input__clear-input-btn {{value !='' ? 'has-value' : ''}}"
+        onTap="onClear"
+      >
+        <icon iconName="close_black.svg" height="16" />
+      </view>
+    </view>
+
+    <view style="flex: 1 1 0" a:else>
+      <input
+        class="vfmp-input__input {{searchIconVisible == 'true' ? 'vfmp-input__input--search-icon' : ''}} {{inputDisabled ? 'vfmp-input__input--disabled' : ''}}"
+        id="{{id}}"
+        step="any"
+        value="{{value}}"
+        maxlength="{{maxlength}}"
+        onBlur="onBlur"
+        onInput="onInput"
+        disabled={{inputDisabled}}
+        type={{type == 'amount' || type == 'amountWithBalance' ? 'digit' : type}}
+        inputMode={{inputMode}}
+        id={{componentID + '-input'}}
+        aria-label={{componentID + '-input'}}
+        data-field={{field}}
+      />
+    </view>
+    <button
+      id={{componentID + '-button'}}
+      aria-label={{componentID + '-button'}}
+      class="vfmp-input__input--button"
+      onTap="onIconButtonClick"
+    >
+      <icon
+        height="24"
+        iconName={{buttonIconName}}
+        otherStyles="margin-top: 8px;"
+        iconColor="white"
+      >
+      </icon>
+    </button>
+  </view>
+
+  <view a:else>
+    <view a:if="{{isClearIconVisible == 'true'}}">
+      <view class="vfmp-input__clear-input-wrapper" style="flex: 1 1 0">
+        <input
+          class="vfmp-input__input {{searchIconVisible == 'true' ? 'vfmp-input__input--search-icon' : ''}} {{isClearIconVisible ? 'vfmp-input__input--clear-icon' : ''}}  {{inputDisabled ? 'vfmp-input__input--disabled' : ''}}"
+          id="{{id}}"
+          step="any"
+          onBlur="onBlur"
+          onInput="onInput"
+          value="{{value}}"
+          maxlength="{{maxlength}}"
+          disabled={{inputDisabled}}
+          type={{type == 'amount' || type == 'amountWithBalance' ? 'digit' : type}}
+          inputMode={{type}}
+          id={{componentID + '-input'}}
+          aria-label={{componentID  + '-input'}}
+          style="backgroundSize: {{searchIconSize}}, backgroundPosition: {{searchIconMarginLeft}} auto, paddingLeft: {{searchIconLeftSpace}}"
+          data-field={{field}}
+        />
+        <view
+          class="vfmp-input__clear-input-btn {{value !='' ? 'has-value' : ''}}"
+          style="top: {{clearIconTopPosition}}"
+          onTap="onClearButtonClick"
+        >
+          <icon iconName="close_black.svg" height={{clearIconSize}} />
+        </view>
+      </view>
+    </view>
+    <view style="flex: 1 1 0" a:else>
+      <input
+        class="vfmp-input__input {{searchIconVisible == 'true' ? 'vfmp-input__input--search-icon' : ''}}  {{inputDisabled ? 'vfmp-input__input--disabled' : ''}}"
+        id="{{id}}"
+        step="any"
+        value="{{value}}"
+        maxlength="{{maxlength}}"
+        onBlur="onBlur"
+        onInput="onInput"
+        disabled={{inputDisabled}}
+        type={{type == 'amount' || type == 'amountWithBalance' ? 'digit' : type}}
+        inputMode={{type}}
+        id={{componentID + '-input'}}
+        aria-label={{componentID + '-input'}}
+        data-field={{field}}
+      />
+    </view>
+  </view>
+  <view a:if="{{helperMsg || errorMsg}}">
+    <text a:if="{{!errorMsg}}" class="f-input__helper-default">{{helperMsg}}</text>
+    <text class="vfmp-input__bottom-text">{{errorMsg}}</text>
+  </view>
+</view>
+<view a:if="{{ hasSuggestions }}" class="mb-8">
+  <suggestion-list suggestionList="{{suggestionItems}}" currencySymbol="{{suggestionSymbol}}" onSuggestionClick="onSuggestionClick" selected="{{selectedSuggestion}}" />
+</view>

@@ -1,0 +1,16 @@
+.m-cell__action {
+  position: relative;
+}
+
+.m-cell__action .arrow {
+  width: 28px;
+  height: 28px;
+  background-image: url('/assets/chevron-right.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.m-cell__action .m-notif.dot {
+  width: 12px;
+  height: 12px;
+}

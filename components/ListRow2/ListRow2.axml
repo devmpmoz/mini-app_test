@@ -1,0 +1,21 @@
+<import-sjs name="element" from="/utils/element.sjs" />
+
+<m-cell onTap="onTap" value="{{value}}" class="{{wrapperExtraClass}}">
+  <m-cell-icon a:if="{{trailingIconSrc}}" w="32" h="32" class="mr-16 {{leftIconWrapperExtraClass}}" >
+    <m-icon src="{{trailingIconSrc ? trailingIconSrc : ''}}" />
+  </m-cell-icon>
+  <m-cell-content>
+    <m-cell-label class="{{description ? 'title' : ''}} {{labelExtraClass}}">
+      {{label}}
+    </m-cell-label>
+    <m-cell-desc a:if="{{description}}" class="mt-6 {{descriptionExtraClass}}">
+      {{description}}
+    </m-cell-desc>
+  </m-cell-content>
+  <m-cell-action a:if="{{ leadingIconSrc || showLeadingArrow }}">
+    <view a:if="{{!leadingIconSrc && showLeadingArrow}}" class="arrow" />
+    <m-cell-icon a:if="{{leadingIconSrc}}" w="32" h="32" class="mr-16 {{rightIconWrapperExtraClass}}">
+      <m-icon src="{{leadingIconSrc ? leadingIconSrc : ''}}" />
+    </m-cell-icon>
+  </m-cell-action>
+</m-cell>

@@ -1,0 +1,26 @@
+<view id={{componentID}} aria-label={{componentID}} class="vfmp-labeled-list-row__container {{isDetailedList ? 'vfmp-labeled-list-row__container--detailed' : ''}}" onTap="setExtraValuesVisible">
+  <view class="vfmp-labeled-list-row__wrapper">
+
+    <view class="vfmp-labeled-list-row__label">
+      <view>{{label}}</view>
+      <view class="vfmp-labeled-list-row__label__description" a:if="{{labelDescription}}">{{labelDescription}}</view>
+    </view>
+    <view class="vfmp-labeled-list-row__value {{valueType === 'big' ? 'vfmp-labeled-list-row__value--big' : ''}}">
+      <view class="vfmp-labeled-list-row__value-view" a:if="{{invertedValues}}"><slot name="value"/>{{value}}</view>
+      <view class="vfmp-labeled-list-row__value-description" a:if="{{valueDescription != ''}}">{{valueDescription}}</view>
+      <view class="vfmp-labeled-list-row__value-view" a:if="{{invertedValues == false }}"><slot name="value"/>{{value}}</view>
+    </view>
+
+    <view class="vfmp-labeled-list-row__extraValues" a:if="{{extraValuesVisible}}">
+
+      <view a:for="{{extraValues}}">
+        <view key={{index}} >
+          <view class='vfmp-labeled-list-row__extraValues_label'>{{item.label}}</view>
+          <br />
+              {{item.value}}
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>

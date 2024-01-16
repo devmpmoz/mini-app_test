@@ -1,0 +1,23 @@
+<view class="container">
+  <m-nav size="small" title="{{ i18n.favouriteAdded.appBarTitle }}"/>
+
+  <view class="body">
+    <view class="card">
+      <view class="content m-flex m-align-center m-text-center">
+        <view class="my-auto"/>
+        <image class="" style="height: 200rpx;" src="/assets/icons/hi_tick_outline.svg"/>
+
+        <view class="my-32"/>
+        <view class="m-body body-18">{{ i18n.favouriteAdded.successLbl }}</view>
+
+        <view class="my-auto"/>
+      </view>
+
+      <view class="action-section m-flex m-flex-row p-16">
+        <m-button onTap="onDone">
+          {{ i18n.favouriteAdded.primaryBtnLbl }}
+        </m-button>
+      </view>
+    </view>
+  </view>
+</view>

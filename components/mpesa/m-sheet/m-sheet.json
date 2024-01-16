@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "swipe": "../../Swipe/Swipe",
+    "transition": "../../Transition/Transition",
+    "m-overlay": "../../mpesa/m-overlay/m-overlay"
+  }
+}

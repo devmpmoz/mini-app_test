@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "styleIsolation": "apply-shared",
+  "usingComponents": {
+    "m-cell": "../mpesa/m-cell/m-cell",
+    "m-cell-action": "../mpesa/m-cell-action/m-cell-action",
+    "m-cell-content": "../mpesa/m-cell-content/m-cell-content",
+    "m-cell-desc": "../mpesa/m-cell-desc/m-cell-desc"
+  }
+}

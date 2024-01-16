@@ -1,0 +1,28 @@
+<import-sjs from="/utils/formatNumber.sjs" name="numberFormat" />
+
+<view class="container">
+  <m-nav size="small" title="{{ i18n.confirmPayment.appBarTitle }}" />
+
+  <view class="body">
+    <view class="card">
+      <view class="content">
+        <labeled-list-row a:if="{{ meterName }}" label="{{ i18n.confirmPayment.meterName }}" value="{{ meterName || 'N/I' }}">
+        </labeled-list-row>
+        <labeled-list-row label="{{ i18n.confirmPayment.meterNumber }}" value="{{ meterNo }}">
+        </labeled-list-row>
+        <labeled-list-row label="{{ i18n.confirmPayment.fee }}" value="{{ chargeAmount != undefined ? numberFormat.currency(chargeAmount) : i18n.common.unavailable }}">
+        </labeled-list-row>
+        <labeled-list-row label="{{ i18n.confirmPayment.total }}" value="{{ chargeAmount != undefined ? numberFormat.currency(amount + chargeAmount) : numberFormat.currency(amount) }}">
+        </labeled-list-row>
+      </view>
+
+      <view class="action-section p-16">
+        <m-button onTap="onConfirm" loading="{{isLoading}}">
+          {{ i18n.confirmPayment.primaryBtn }}
+        </m-button>
+      </view>
+    </view>
+  </view>
+</view>
+
+<error-modal ref="errorModalRef" />

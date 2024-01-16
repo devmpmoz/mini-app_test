@@ -1,0 +1,8 @@
+.total {
+  font-size: 40rpx;
+}
+
+.action-buttons-container {
+  display: flex;
+  justify-content: center;
+}

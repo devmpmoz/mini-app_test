@@ -1,0 +1,77 @@
+.vfmp-nav-sticky-position {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.vfmp-nav {
+  position: relative;
+  display: flex;
+  background-size: cover;
+  color: #fff;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(45deg, rgba(2, 0, 36, 1) 0%, rgba(154, 30, 20, 1) 0%, rgba(233, 52, 35, 1) 100%);
+}
+
+.vfmp-nav-small {
+  height: 160rpx;
+}
+
+.vfmp-nav-medium {
+  height: 300rpx;
+}
+
+.vfmp-nav-large {
+  height: 500rpx;
+}
+
+.vfmp-nav .title {
+  white-space: nowrap;
+  font-family: VodafoneRg-Regular;
+  font-weight: normal;
+  font-size: 40rpx;
+  margin: auto;
+  margin-bottom: 24rpx;
+}
+
+@media (min-height: 779px) {
+
+  /* styles for devices with screen height > 790px */
+  /* screens with notch, heigher status bar (eg. iPhone X - iPhone 13 Pro) */
+  .vfmp-nav-small {
+    height: 180rpx;
+  }
+
+  .vfmp-nav-medium {
+    height: 320rpx;
+  }
+
+  .vfmp-nav-large {
+    height: 520rpx;
+  }
+
+  .vfmp-nav .title {
+    top: 105rpx;
+  }
+}
+
+@media (max-height: 779px) {
+
+  /* styles for devices with screen height <= 790px */
+  /* screens without notch, lower status bar (eg. iPhone 5 - iPhone 8 Plus)*/
+  .vfmp-nav-small {
+    height: 160rpx;
+  }
+
+  .vfmp-nav-medium {
+    height: 300rpx;
+  }
+
+  .vfmp-nav-large {
+    height: 500rpx;
+  }
+
+  .vfmp-nav.title {
+    top: 68rpx;
+  }
+}

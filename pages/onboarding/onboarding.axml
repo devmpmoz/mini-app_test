@@ -1,0 +1,29 @@
+<view class="container">
+  <m-nav size="small" title="{{ i18n.home.appBarTitle }}" class="nav-bar"/>
+
+  <view class="tutorial-container">
+    <tutorial onClickFinalStep="handleFinishOnboarding">
+      
+      <tutorial-step slot="step0" imagePath="/assets/images/onboarding_step1.svg" buttonText="{{ i18n.onboarding.step1.button }}" >
+        <view slot="title">{{ i18n.onboarding.step1.title }}</view>
+        <view slot="description">{{ i18n.onboarding.step1.description }}</view>
+      </tutorial-step>
+
+      <tutorial-step slot="step1" imagePath="/assets/images/onboarding_step2.svg" buttonText="{{ i18n.onboarding.step2.button }}">
+        <view slot="title">{{ i18n.onboarding.step2.title }}</view>
+        <view slot="description">
+          <text decode="true" class="tutorial-step-description">
+            {{ i18n.onboarding.step2.descriptionPart1 }}
+            <text class="bold">{{ i18n.onboarding.step2.descriptionPart2_bold }}</text>
+            {{ i18n.onboarding.step2.descriptionPart3 }}
+            <text class="bold">{{ i18n.onboarding.step2.descriptionPart4_bold }}</text>
+            {{ i18n.onboarding.step2.descriptionPart5 }}
+            <text class="bold">{{ i18n.onboarding.step2.descriptionPart6_bold }}</text>
+            {{ i18n.onboarding.step2.descriptionPart7 }}
+          </text>
+        </view>
+      </tutorial-step>
+
+    </tutorial>
+  </view>
+</view>

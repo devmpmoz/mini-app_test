@@ -1,0 +1,66 @@
+<view class="am-tabs {{className}}" a:if="{{tabs.length}}">
+  <view class="am-tabs-tab-bar-wrap">
+    <view class="am-tabs-bar">
+      <view class="am-tabs-bar-content-wrap">
+        <view class="am-tabs-scroll-left"></view>
+        <view class="am-tabs-scroll-right"></view>
+        <scroll-view
+          scroll-left="{{data.calcScrollLeft(windowWidth, tabWidth, activeTab)}}"
+          scroll-x="{{true}}"
+          scroll-with-animation="{{animation}}"
+          class="am-tabs-bar-content">
+          <block a:for="{{tabs}}">
+            <view
+              data-index="{{index}}"
+              key="tabs-item-{{index}}"
+              onTap="handleTabClick"
+              style="{{
+                backgroundColor: tabBarBackgroundColor,
+                color: index === activeTab ? tabBarActiveTextColor: tabBarInactiveTextColor,
+                width: (tabs.length > 3 ? 0.25 : 1 / tabs.length) * 100 + '%',
+              }}"
+              class="am-tabs-bar-tab {{tabBarCls}}">
+              <view class="am-tabs-bar-title {{ index === activeTab ? activeCls + 'active' : '' }}" style="{{ borderBottomColor: index === activeTab ? tabBarUnderlineColor : '' }}">
+                <text>{{item.title}}</text>
+                <badge
+                  className="am-tabs-bar-badge {{item.badgeType ? item.badgeType : ''}}"
+                  a:if="{{item.badgeType}}"
+                  type="{{item.badgeType}}"
+                  dot="{{item.badgeType == 'dot'}}"
+                  text="{{item.badgeText}}" />
+              </view>
+            </view>
+          </block>
+        </scroll-view>
+      </view>
+      <view class="am-tabs-plus-wrap {{showPlus ? 'show' : ''}}">
+        <view class="am-tabs-plus" onTap="handlePlusClick"></view>
+      </view>
+    </view>
+    <block a:if="{{swipeable}}">
+      <swiper
+        circular="{{false}}"
+        current="{{activeTab}}"
+        interval="99999999"
+        autoplay="{{autoplay}}"
+        duration="{{duration}}"
+        onChange="handleTabChange"
+        >
+        <block a:for="{{tabs}}" a:for-item="tab" a:for-index="idx">
+            <swiper-item key="tabs-pane-{{idx}}">
+                <slot name="{{tab.title}}"/>
+            </swiper-item>
+        </block>
+      </swiper>
+    </block>
+    <block a:else>
+      <block a:for="{{tabs}}" a:for-item="tab" a:for-index="idx">
+        <view a:if="{{ activeTab === idx }}">
+          <view key="tabs-pane-{{idx}}" >
+            <slot name="{{tab.title}}"/>
+          </view>
+        </view>
+      </block>
+    </block>
+  </view>
+</view>

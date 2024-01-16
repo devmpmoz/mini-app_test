@@ -1,0 +1,258 @@
+{
+  "appName": "Credelec",
+  "languageCode": "pt",
+  "home": {
+    "appBarTitle": "Credelec",
+    "makeNewPayment": "Iniciar novo pagamento",
+    "emptyPayments": "Sem pagamentos por mostrar",
+    "favouriteMetersTitle": "Os teus contadores favoritos",
+    "recharge": "Carregar",
+    "favouriteLastPayment": "Último pagamento",
+    "paymentLastPayment": "Os teus pagamentos",
+    "viewMorePayment": "Ver todos",
+    "favourites": {
+      "editFavourites": "Editar favoritos",
+      "favouritesEmptyTitle": "Ainda não tens favoritos",
+      "favouritesEmptyDescription": "Adiciona o teu contador favorito e paga as tuas contas de forma rápida, fácil e segura com apenas um click. Para adicionar um favorito, clica em Começar e vamos lá.",
+      "favouritesEmptyButton": "Começar"
+    }
+  },
+  "makePayment": {
+    "appBarTitle": "Efectuar pagamento",
+    "meterName": "Digita o nome do contador",
+    "meterNumber": "Digita o número do contador",
+    "amount": "Valor",
+    "currentBalance": " Saldo actual",
+    "continueBtn": "Continuar",
+    "rechargeBtn": "Recarregar",
+    "makePaymentLoading": "O teu pagamento está a ser processado",
+    "preValidationLoading": "Por favor espera um momento"
+  },
+  "confirmPayment": {
+    "appBarTitle": "Verifica e Confirma",
+    "to": "Para",
+    "meterName": "Nome do contador",
+    "meterNumber": "Número do contador",
+    "total": "Total",
+    "primaryBtn": "Pagar",
+    "fee": "Taxa da transacção"
+  },
+  "paymentResult": {
+    "appBarTitle": "Pagamento confirmado",
+    "successTitle": "O pagamento de {{value}} está a ser processado",
+    "successDescription": "Em breve vais receber um SMS com a confirmação",
+    "voucher": "Recarga",
+    "meterNo": "Número do contador",
+    "meterName": "Nome do contador",
+    "units": "Unidades",
+    "tipLabel": "Podes recuperar o teu recibo ou \"Continuar\" para guardar o teu número do contador",
+    "viewVoucherBtn": "Consultar recarga",
+    "primaryBtn": "Concluir",
+    "addFavouriteBtn": "Adicionar favorito",
+    "copiedSuccess": "Copiado para o clipboard",
+    "copiedError": "Erro ao copiar"
+  },
+  "paymentDetails": {
+    "appBarTitle": "Detalhes",
+    "meterName": "Nome do contador",
+    "meterNumber": "Número do contador",
+    "voucher": "Recarga",
+    "txTax": "Taxa da transacção",
+    "date": "Data e hora",
+    "total": "Total",
+    "txFees": "Taxa da transacção",
+    "download": "Ver recibo",
+    "primaryBtn": "Voltar",
+    "primaryBtnRepay": "Pagar novamente"
+  },
+  "saveMeter": {
+    "appBarTitle": "Adicionar favorito",
+    "voucherNotRetrievedTitle": "O seu pagamento de 350 MT está a ser processado. Por favor, aguarda.",
+    "voucherNotRetrievedSubtitle": "\"Vais receber em breve, uma notificação por SMS com a tua recarga\"",
+    "meterNameFld": "Digite o nome do contador",
+    "primaryBtn": "Adicionar favorito",
+    "secondaryBtn": "Cancelar"
+  },
+  "favourites": {
+    "appBarTitle": "Gerir favoritos",
+    "addFavouriteLbl": "Adicionar novo favorito",
+    "listTitle": "Favoritos",
+    "bottomSheetTitle": "Escolhe uma opção",
+    "editFavourite": "Editar favorito",
+    "deleteFavourite": "Remover favorito",
+    "favouriteRemoveSuccess": "Favorito removido com sucesso",
+    "favouriteRemoveError": "Estamos a ter problemas para remover o teu contador favorito. Por favor, tenta novamente.",
+    "removeFavouriteLoading": "A remover favorito, por favor espera um momento",
+    "emptyTitle": "Não tens favoritos ainda"
+  },
+  "addFavourite": {
+    "appBarTitle": "Adicionar favorito",
+    "meterNameFld": "Digita o nome do contador",
+    "meterNumberFld": "Digita o número do contador",
+    "primaryBtn": "Adicionar favorito",
+    "favouriteAddSuccess": "Favorito adicionado com sucesso",
+    "favouriteAddError": "Estamos a ter problemas para adicionar o teu novo contador favorito. Por favor, tenta novamente.",
+    "addFavouriteLoading": "A adicionar favorito, por favor espera um momento",
+    "selectFavouriteLabel": "Para adicionares um número de contador como favorito, por favor atribui um nome ao contador."
+  },
+  "editFavourite": {
+    "appBarTitle": "Editar favorito",
+    "meterNameFld": "Digita o nome do contador",
+    "meterNumberFld": "Digita o número do contador",
+    "primaryBtn": "Guardar alterações",
+    "favouriteEditSuccess": "Favorito atualizado com sucesso",
+    "favouriteEditError": "Estamos a ter problemas para atualizar o teu contador favorito. Por favor, tenta novamente.",
+    "editFavouriteLoading": "A atualizar favorito, por favor espera um momento"
+  },
+  "replaceFavourite": {
+    "appBarTitle": "Substituir favorito",
+    "warningLbl": "Escolhe o favorito que queres remover. Ao substituir um favorito, vais perder os detalhes do contador eliminado.",
+    "listTitle": "Favoritos",
+    "favouriteReplaceSuccess": "Favorito substituído com sucesso",
+    "favouriteReplaceError": "Estamos a ter problemas para substituir o teu contador favorito. Por favor, tenta novamente.",
+    "replaceFavouriteLoading": "A substituir favorito, por favor espera um momento"
+  },
+  "favouriteAdded": {
+    "appBarTitle": "Favorito Adicionado",
+    "successLbl": "Adicionaste com sucesso o teu novo contador favorito",
+    "primaryBtnLbl": "Ok"
+  },
+  "paymentsHistory": {
+    "appBarTitle": "Credelec",
+    "unknownMeter": "Outro contador",
+    "toastError": "Estamos a ter problemas para obter os teus pagamentos. Por favor, tenta novamente."
+  },
+  "onboarding": {
+    "step1": {
+      "title": "O que é Credelec?",
+      "description": "Credelec é um serviço que te permite comprar electricidade para a tua casa de forma rápida, fácil e segura.",
+      "button": "Começar"
+    },
+    "step2": {
+      "title": "O que é preciso para comprar Credelec?",
+      "descriptionPart1": "Só precisas de:\n1. Número do contador&nbsp;",
+      "descriptionPart2_bold": "de electricidade.",
+      "descriptionPart3": "\n2. Ter&nbsp;",
+      "descriptionPart4_bold": "no mínimo 80MTs",
+      "descriptionPart5": "&nbsp; para a primeira compra do mês&nbsp;",
+      "descriptionPart6_bold": "e 10MTs de saldo",
+      "descriptionPart7": "&nbsp;na segunda compra do mês.",
+      "button": "Continuar"
+    }
+  },
+  "alerts": {
+    "confirmFavouriteDelete": {
+      "title": "Remover contador favorito",
+      "body1": "Vais remover o favorito {{name}} da tua lista. Gostarias de continuar?",
+      "primaryBtn": "Remover favorito",
+      "secondaryBtn": "Cancelar"
+    },
+    "favouriteLimit": {
+      "title": "Limite de favoritos atingido",
+      "body1": "Já atingiste o limite de 5 contadores favoritos. Para adicionar mais um favorito, escolhe Gerir Favoritos e remove um dos números existentes.",
+      "primaryBtn": "Gerir favoritos",
+      "secondaryBtn": "Cancelar"
+    },
+    "replaceLimit": {
+      "title": "Substituir contador favorito",
+      "body1": "Ao selecionar {{old_name}} vais remover este contador favorito para adicionar {{new_name}} como um novo favorito. Desejas continuar?",
+      "primaryBtn": "Substituir favorito",
+      "secondaryBtn": "Cancelar"
+    }
+  },
+  "error": {
+    "invalidMeterName": "Nome de contador inválido",
+    "invalidMeterNumber": "Número de contador inválido",
+    "incompleteMeterNumber": "O número de contador deve ter 11 dígitos",
+    "invalidAmount": "Valor inválido",
+    "minimumAmount": "Valor mínimo: ",
+    "maximumAmount": "Valor máximo: ",
+    "meterNameAlreadyExist": "O nome de contador inserido já é um favorito",
+    "meterNoAlreadyExist": "O número de contador inserido já é um favorito"
+  },
+  "loading": {
+    "": ""
+  },
+  "common": {
+    "meter": "Contador",
+    "btnRetry": "Tenta novamente",
+    "btnCancel": "Cancelar",
+    "genericErrorToast": "Estamos a ter problemas para obter os teus detalhes. Por favor, tenta novamente.",
+    "unavailable": "Indisponível"
+  },
+  "receipt": {
+    "title": "Detalhes da transacção",
+    "service": "Serviço",
+    "meterNumber": "Contador",
+    "token": "Recarga",
+    "energyCost": "Custo de Energia",
+    "vat": "IVA",
+    "paidDebt": "Dívida paga",
+    "amountDebt": "Dívida a pagar",
+    "taxGarbage": "Tax Lixo",
+    "taxRadio": "Tax Radio",
+    "totalPayment": "Pagamento Total",
+    "energyUnits": "Unidades",
+    "reference": "Referência",
+    "dateTime": "Data e hora",
+    "unavailable": "Indisponível",
+    "credelec": "EDM Credelec",
+    "appBarTitle": "Recibo",
+    "download": "Guardar e partilhar recibo",
+    "unableToDownload": "De momento não é possivel obter o teu recibo. Tenta novamente"
+  },
+  "errorCodes": {
+    "AMOUNT_TOO_LOW": {
+      "title": "Valor insuficiente",
+      "description": "Para concluir a transacção é preciso introduzir um valor mais elevado! Por favor, volta a tentar.",
+      "primaryButton": "Tentar novamente",
+      "secondaryButton": "Cancelar"
+    },
+    "AMOUNT_TOO_HIGH": {
+      "title": "Valor elevado",
+      "description": "Para concluir a transacção é preciso introduzir um valor mais baixo! Por favor, volta a tentar.",
+      "primaryButton": "Tentar novamente",
+      "secondaryButton": "Cancelar"
+    },
+    "LIMIT_EXCEEDED": {
+      "title": "Limite excedido",
+      "description": "Não é possível concluir a transacção porque excedeste o teu limite mensal.",
+      "primaryButton": "Voltar ao dashboard"
+    },
+    "INSUFFICIENT_BALANCE": {
+      "title": "Saldo insuficiente",
+      "description": "O pagamento foi rejeitado. Não tens saldo suficiente para completar essa transacção. Por favor recarrega a tua conta M-Pesa.",
+      "primaryButton": "Voltar ao dashboard"
+    },
+    "INVALID_RECEIVER": {
+      "title": "Destino inválido",
+      "description": "Valida o destinatário e volta a tentar.",
+      "primaryButton": "Tentar novamente",
+      "secondaryButton": "Cancelar"
+    },
+    "INVALID_PARAMETERS": {
+      "title": "Dados inválidos",
+      "description": "Valida se inseriste os dados correctamente e volta a tentar.",
+      "primaryButton": "Tentar novamente",
+      "secondaryButton": "Cancelar"
+    },
+    "WRONG_PIN": {
+      "title": "PIN incorrecto",
+      "description": "A tua conta será bloqueada se digitares um PIN incorrecto 3 vezes. Por favor, verifica o PIN e tenta novamente.",
+      "primaryButton": "Tentar novamente",
+      "secondaryButton": "Cancelar"
+    },
+    "SERVICE_UNAVAILABLE": {
+      "title": "Sistema indisponível",
+      "description": "Não conseguimos processar a transacção. Por favor tenta novamente.",
+      "primaryButton": "Tentar novamente",
+      "secondaryButton": "Cancelar"
+    },
+    "UNKNOWN": {
+      "title": "Desculpa, ocorreu algum erro",
+      "description": "Estamos a enfrentar algum constrangimento para concluir esta solicitação. Por favor, tenta novamente.",
+      "primaryButton": "Tentar novamente",
+      "secondaryButton": "Cancelar"
+    }
+  }
+}

@@ -1,0 +1,89 @@
+@font-face {
+  font-family: VodafoneRg-Regular;
+  src: url('/assets/fonts/VodafoneRg.ttf');
+}
+@font-face {
+  font-family: VodafoneRg-Bold;
+  src: url('/assets/fonts/VodafoneRgBd.ttf');
+}
+@font-face {
+  font-family: VodafoneLt;
+  src: url('/assets/fonts/VodafoneLt.ttf');
+}
+
+
+.vfmp-summary-card__container {
+	 padding: 24px 16px 12px;
+	 border-radius: 6px;
+	 background-color: #00b0ca;
+	 color: #fff;
+	 box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+}
+ .vfmp-summary-card__container_white {
+	 background-color: #fff;
+	 color: #aaa;
+}
+ .vfmp-summary-card__container_white .vfmp-summary-card__header {
+	 border-bottom: 1px solid #dadada;
+}
+ .vfmp-summary-card__container_white .vfmp-summary-card__footer__button {
+	 color: #666;
+	 border: 1px solid #dadada;
+}
+ .vfmp-summary-card__header {
+	 display: flex;
+	 flex-direction: row;
+	 align-items: baseline;
+	 border-bottom: 1px solid #fff;
+	 margin-bottom: 12px;
+}
+ .vfmp-summary-card__header_title {
+	 flex: 1 auto;
+	 text-transform: uppercase;
+	 font-size: 12px;
+	 font-family: VodafoneRg-Regular, 'Segoe UI', Verdana, sans-serif;
+}
+ .vfmp-summary-card__header_value {
+	 flex: 0 auto;
+	 font-size: 28px;
+	 font-family: VodafoneLt, 'Segoe UI', Verdana, sans-serif;
+}
+ .vfmp-summary-card__sections {
+	 margin-bottom: 12px;
+}
+ .vfmp-summary-card__section {
+	 display: flex;
+	 flex-direction: row;
+}
+ .vfmp-summary-card__section_title {
+	 flex: 1 auto;
+	 text-transform: uppercase;
+	 font-size: 12px;
+	 font-family: VodafoneRg-Regular, 'Segoe UI', Verdana, sans-serif;
+}
+ .vfmp-summary-card__section_value {
+	 flex: 0 auto;
+	 font-size: 12px;
+	 font-family: VodafoneRg-Bold, 'Segoe UI', Verdana, sans-serif;
+}
+ .vfmp-summary-card__footer {
+	 display: flex;
+	 flex-direction: row;
+	 align-items: center;
+	 justify-content: space-between;
+}
+ .vfmp-summary-card__footer__text {
+	 font-size: 10px;
+	 line-height: 22px;
+	 font-family: VodafoneLt, 'Segoe UI', Verdana, sans-serif;
+}
+ .vfmp-summary-card__footer__button {
+	 font-size: 10px;
+	 line-height: 10px;
+	 padding: 5px 12px;
+	 color: #fff;
+	 border: 1px solid #fff;
+	 border-radius: 12px;
+	 font-family: VodafoneRg-Bold, 'Segoe UI', Verdana, sans-serif;
+	 text-transform: uppercase;
+}

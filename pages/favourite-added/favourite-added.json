@@ -1,0 +1,7 @@
+{
+  "pullRefresh": false,
+  "usingComponents": {
+    "m-nav": "/components/NavBar/NavBar",
+    "m-button": "/components/mpesa/m-btn/m-btn"
+  }
+}

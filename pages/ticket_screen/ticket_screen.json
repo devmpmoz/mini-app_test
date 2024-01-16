@@ -1,0 +1,9 @@
+{
+  "pullRefresh": false,
+  "usingComponents": {
+    "m-nav": "/components/NavBar/NavBar",
+    "labeled-list-row": "/components/LabeledListRow/LabeledListRow",
+    "toast": "/components/Toast/Toast",
+    "m-button": "/components/mpesa/m-btn/m-btn"
+  }
+}

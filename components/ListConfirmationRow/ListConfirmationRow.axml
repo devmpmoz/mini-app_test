@@ -1,0 +1,21 @@
+<view id={{componentID}} aria-label={{componentID}} class="vfmp-list-confirmation-row__container">
+  <view class="vfmp-list-confirmation-row__title-wrapper">
+    <view class="label">{{label}}</view>
+    <view class="title">{{title}}</view>
+
+    <view a:for="{{captionTitles}}">
+      <view class="caption-title-row" key="caption-title-{{index}}">
+        <view class="cp-title">{{item.title}}</view>
+        <view class="cp-subtitle">{{item.subtitle}}</view>
+      </view>
+    </view>
+
+  </view>
+
+  <view class='vfmp-list-confirmation-row__edit-wrapper' a:if="{{isEditable}}">
+    <button id={{componentID + '-button'}} aria-label={{componentID + '-button'}} class='edit' onTap="onEditClick">
+      <icon width="24" height="24" iconName='edit.svg' color='#666666' />
+    </button>
+  </view>
+
+</view>

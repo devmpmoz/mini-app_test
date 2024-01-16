@@ -1,0 +1,5 @@
+<import-sjs name="element" from="/utils/element.sjs"/>
+
+<view class="{{ element.classAttr('m-cell__action', className) }}" style="min-width: {{ w }}px; min-height: {{ h }}px; width: {{ w }}px; height: {{ h }}px" onTap="onTap">
+  <slot/>
+</view>

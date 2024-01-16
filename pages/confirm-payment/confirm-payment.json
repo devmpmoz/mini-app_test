@@ -1,0 +1,10 @@
+{
+  "pullRefresh": false,
+  "usingComponents": {
+    "list-confirmation-row": "/components/ListConfirmationRow/ListConfirmationRow",
+    "labeled-list-row": "/components/LabeledListRow/LabeledListRow",
+    "m-nav": "/components/NavBar/NavBar",
+    "error-modal": "/components/ErrorModal/ErrorModal",
+    "m-button": "/components/mpesa/m-btn/m-btn"
+  }
+}

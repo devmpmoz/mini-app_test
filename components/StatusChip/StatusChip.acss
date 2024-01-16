@@ -1,0 +1,42 @@
+@font-face {
+  font-family: VodafoneRg-Regular;
+  src: url('/assets/fonts/VodafoneRg.ttf');
+}
+
+
+.vfmp-status-chip--, .vfmp-status-chip--primary, .vfmp-status-chip--success, .vfmp-status-chip--error, .vfmp-status-chip--info {
+	 padding: 6px 12px 6px 12px;
+	 font-size: 12px;
+	 line-height: 14px;
+	 font-family: VodafoneRg-Regular, 'Segoe UI', Verdana, sans-serif;
+	 border-radius: 20px;
+	 display: flex;
+	 justify-content: center;
+	 text-align: center;
+}
+ .vfmp-status-chip-- span, .vfmp-status-chip--primary span, .vfmp-status-chip--success span, .vfmp-status-chip--error span, .vfmp-status-chip--info span {
+	 max-width: 75px;
+	 text-overflow: ellipsis;
+	 overflow: hidden;
+	 white-space: nowrap;
+}
+ .vfmp-status-chip--primary {
+	 background-color: #fff;
+	 border: 1px solid #ccc;
+	 color: #333;
+}
+ .vfmp-status-chip--success {
+	 background-color: #090;
+	 border: 1px solid #090;
+	 color: #fff;
+}
+ .vfmp-status-chip--error {
+	 background-color: #e60000;
+	 border: 1px solid #e60000;
+	 color: #fff;
+}
+ .vfmp-status-chip--info {
+	 background-color: #007c92;
+	 border: 1px solid #007c92;
+	 color: #fff;
+}

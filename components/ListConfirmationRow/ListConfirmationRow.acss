@@ -1,0 +1,67 @@
+@font-face {
+  font-family: VodafoneRg-Regular;
+  src: url('/assets/fonts/VodafoneRg.ttf');
+}
+@font-face {
+  font-family: VodafoneRg-Bold;
+  src: url('/assets/fonts/VodafoneRgBd.ttf');
+}
+@font-face {
+  font-family: VodafoneLt;
+  src: url('/assets/fonts/VodafoneLt.ttf');
+}
+@font-face {
+  font-family: VodafoneRg;
+  src: url('/assets/fonts/VodafoneRg.ttf');
+}
+
+@font-face {
+  font-family: VodafoneRgBd;
+  src: url('/assets/fonts/VodafoneRgBd.ttf');
+}
+
+.vfmp-list-confirmation-row__container {
+	 display: flex;
+	 flex-direction: row;
+	 justify-content: space-between;
+	 align-items: center;
+	 padding: 10px;
+	/* Adjustment for vfmp__confirmation-card :after transparency */
+}
+ .vfmp-list-confirmation-row__container:last-child {
+	 padding-bottom: 30px;
+}
+ .vfmp-list-confirmation-row__title-wrapper {
+	 display: flex;
+	 flex-direction: column;
+	 text-transform: uppercase;
+}
+ .vfmp-list-confirmation-row__title-wrapper .label {
+	 font-family: VodafoneLt, 'Segoe UI', Verdana, sans-serif;
+	 font-size: 12px;
+	 color: #666;
+}
+ .vfmp-list-confirmation-row__title-wrapper .title {
+	 font-family: VodafoneRg, 'Segoe UI', Verdana, sans-serif;
+	 font-size: 16px;
+	 color: #333;
+}
+ .vfmp-list-confirmation-row__title-wrapper .caption-title-row {
+	 display: flex;
+	 flex-direction: row;
+	 font-size: 11px;
+	 color: #333;
+}
+ .vfmp-list-confirmation-row__title-wrapper .caption-title-row .cp-title {
+	 font-family: VodafoneLt, 'Segoe UI', Verdana, sans-serif;
+	 padding-right: 5px;
+}
+ .vfmp-list-confirmation-row__title-wrapper .caption-title-row .cp-subtitle {
+	 font-family: VodafoneRgBd, 'Segoe UI', Verdana, sans-serif;
+}
+ .vfmp-list-confirmation-row__edit-wrapper .edit {
+	 width: 40px;
+	 height: 40px;
+	 border-radius: 100%;
+	 background-color: #f4f4f4;
+}

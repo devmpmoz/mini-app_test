@@ -1,0 +1,10 @@
+.m-cell__label {
+  font-family: VodafoneRg-Regular;
+  font-weight: normal;
+  font-size: 36rpx;
+  line-height: 40rpx;
+}
+
+.m-cell__label.title {
+  font-weight: bold;
+}

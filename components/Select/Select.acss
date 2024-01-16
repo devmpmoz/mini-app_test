@@ -1,0 +1,48 @@
+@font-face {
+  font-family: VodafoneRg-Regular;
+  src: url('/assets/fonts/VodafoneRg.ttf');
+}
+@font-face {
+  font-family: VodafoneRg-Bold;
+  src: url('/assets/fonts/VodafoneRgBd.ttf');
+}
+@font-face {
+  font-family: VodafoneLt;
+  src: url('/assets/fonts/VodafoneLt.ttf');
+}
+
+ .vfmp__select {
+	 display: flex;
+	 flex-direction: row;
+	 align-items: center;
+	 height: 78px;
+	 background-color: #fff;
+	 padding: 0 20px 0 16px;
+}
+ .vfmp__select__right-element {
+	 margin-left: auto;
+	 width: 32px;
+	 height: 32px;
+}
+ .vfmp__select__title {
+	 font-family: VodafoneRg-Bold, 'Segoe UI', Verdana, sans-serif;
+	 font-size: 18px;
+	 color: #333;
+	 text-align: left;
+	 line-height: 24px;
+	 margin-bottom: 4px;
+}
+ .vfmp__select__description {
+	 font-family: VodafoneRg-Regular, 'Segoe UI', Verdana, sans-serif;
+	 font-size: 16px;
+	 color: #666;
+	 text-align: left;
+	 line-height: 22px;
+}
+ .vfmp__select__separator {
+	 width: calc(100% - 32px);
+	 height: 1px;
+	 background-color: #ebebeb;
+	 margin-left: auto;
+	 margin-right: auto;
+}

@@ -1,0 +1,119 @@
+@import "./styles/fonts.acss";
+@import "./styles/mpesa-commons.acss";
+
+page {
+  background: #e8e8e8;
+}
+
+.caption {
+  color: #808080;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  background-color: #e8e8e8;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.body {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+  margin: 0;
+  padding: 30rpx 30rpx 30rpx 30rpx;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  background-color: #ffffff;
+  /* text-align: center; */
+  border-radius: 15rpx;
+  /* padding: 30rpx 30rpx 30rpx 30rpx; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.action-section {
+  width: 100%;
+}
+
+.primary-mpesa {
+  background-color: #e60000;
+  border-color: #e60000;
+  font-family: VodafoneRg-Regular;
+  font-weight: normal;
+  font-size: 36rpx;
+  flex: 1;
+  color: white;
+  border-radius: 6px;
+}
+
+.primary-mpesa[disabled] {
+  background-color: #CCC;
+  border-color: #CCC;
+  color: white;
+}
+
+.secondary-mpesa {
+  background-color: #333333;
+  border-color: #333333;
+  font-family: VodafoneRg-Regular;
+  font-weight: normal;
+  font-size: 36rpx;
+  flex: 1;
+  color: white;
+  border-radius: 6px;
+}
+
+.secondary-mpesa[disabled] {
+  background-color: #CCC;
+  border-color: #CCC;
+  color: white;
+}
+
+.selection-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.selection-item {
+  display: flex;
+  font-family: VodafoneRg-Regular;
+  font-size: 28rpx;
+  border: 1px solid #808080;
+  border-radius: 12rpx;
+  width: 142rpx;
+  height: 106rpx;
+  justify-content: center;
+  align-items: center;
+  padding: 15rpx;
+  margin: 0 auto;
+}
+
+.selection-item:first-child {
+  margin-left: 0 !important;
+}
+
+.selection-item:last-child {
+  margin-right: 0 !important;
+}
+
+.selection-group .selected {
+  border-color: #e60000;
+  font-weight: bold;
+}

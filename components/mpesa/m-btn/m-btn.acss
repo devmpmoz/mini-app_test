@@ -1,0 +1,88 @@
+.m-btn {
+  position: relative;
+  display: block;
+  white-space: nowrap;
+  border: 0;
+  border-radius: 4px;
+  outline: none;
+  user-select: none;
+  touch-action: manipulation;
+  font-family: VodafoneRg-Regular;
+  font-weight: 200;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+.m-btn-primary {
+  color: #FFF;
+  background-color: #e60000;
+}
+
+.m-btn-primary[disabled] {
+  color: #FFF;
+  background-color: #CCC;
+  border-color: #CCC;
+}
+
+.m-btn-secondary {
+  color: #FFF;
+  background-color: #333333;
+}
+
+.m-btn-secondary[disabled] {
+  background-color: #CCC;
+  border-color: #CCC;
+  color: white;
+}
+
+.m-btn-large {
+  width: 100%;
+  padding-right: 12px;
+  padding-left: 12px;
+  font-size: 36rpx;
+  line-height: 44px;
+}
+
+.m-btn-small {
+  font-size: 12px;
+  padding: 0 12px;
+  height: 32px;
+  line-height: 32px;
+}
+
+.m-btn-uppercase {
+  text-transform: uppercase;
+}
+
+.m-btn-ghost {
+  color: #e60000;
+  background-color: transparent;
+}
+
+.m-btn-ghost:disabled {
+  color: #CCC;
+  position: relative;
+}
+
+.m-btn-ghost:disabled:after {
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 4px;
+  content: '';
+}
+
+.m-btn-loading-container {
+  display: flex; 
+  align-items:center; 
+  justify-content: center; 
+  height: 86rpx
+}
+
+.m-btn-loading {
+  height: 50rpx;
+  width: 50rpx;
+}

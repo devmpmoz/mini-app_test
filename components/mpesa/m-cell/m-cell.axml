@@ -1,0 +1,5 @@
+<import-sjs name="element" from="/utils/element.sjs"/>
+
+<view class="{{ element.classAttr('m-cell', className) }}" onTap="onTap" data-value="{{value}}">
+  <slot/>
+</view>

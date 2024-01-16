@@ -1,0 +1,8 @@
+{
+  "pullRefresh": true,
+  "usingComponents": {
+    "m-nav": "/components/NavBar/NavBar",
+    "sectioned-list": "/components/SectionedList/SectionedList",
+    "toast": "/components/Toast/Toast"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "icon": "../Icon/Icon",
+    "status-chip": "../StatusChip/StatusChip"
+  }
+}

@@ -1,0 +1,8 @@
+.m-cell {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* min-height: 140rpx; */
+  background-color: #fff;
+  padding: 16px;
+}

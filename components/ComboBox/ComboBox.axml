@@ -1,0 +1,28 @@
+  <view
+      id={{componentID}}
+      style={{extraWrapperStyle}}
+      aria-label={{componentID}}
+      className={{bordered ? 'vfmp-combo-box__container vfmp-combo-box__container__border' : 'vfmp-combo-box__container '}}
+    >
+      <view className="vfmp-combo-box__title" style={{extraLabelStyle}}>
+        {{label}}
+      </view>
+      <list
+        id={{componentID + '-selectBox'}}
+        aria-label={{componentID + '-selectBox'}}
+        className={{bordered ? 'vfmp-combo-box__selectBox vfmp-combo-box__selectBox__border ' : 'vfmp-combo-box__selectBox '}}
+        name={{name}}
+        defaultValue={{defaultOption}}
+        style={{extraOptionsStyle}}
+       
+      >
+      <view>
+        
+      </view>
+        {options.map((option, idx) => (
+          <option key={`${idx}.${option.value}`} value={option.value} disabled={option.isPlaceholderOption ? true : false} selected={option.isPlaceholderOption ? true : false}>
+            {option.label}
+          </option>
+        ))}
+      </list>
+    </view>

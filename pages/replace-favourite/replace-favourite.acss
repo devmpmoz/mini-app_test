@@ -1,0 +1,20 @@
+.body {
+  padding: 0;
+}
+
+.ant-list-footer, .ant-list-header {
+  font-family: VodafoneRg-Regular;
+  font-size: 36rpx;
+  line-height: 40rpx;
+  font-weight: 700;
+  color: #333333;
+  padding: 0 32rpx 32rpx 32rpx;
+}
+
+.info-message {
+  font-family: VodafoneRg-Regular;
+  color: #666;
+  font-size: 28rpx;
+  line-height: 32rpx;
+  padding: 32rpx;
+}

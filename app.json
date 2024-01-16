@@ -1,0 +1,23 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/make_payment/make_payment",
+    "pages/confirm-payment/confirm-payment",
+    "pages/payment_result/payment_result",
+    "pages/favourites/favourites",
+    "pages/add-favourite/add-favourite",
+    "pages/edit-favourite/edit-favourite",
+    "pages/replace-favourite/replace-favourite",
+    "pages/save-meter/save-meter",
+    "pages/payment-details/payment-details",
+    "pages/favourite-added/favourite-added",
+    "pages/payments-history/payments-history",
+    "pages/onboarding/onboarding",
+    "pages/ticket_screen/ticket_screen"
+  ],
+  "window": {
+    "transparentTitle": "always",
+    "titleBarColor": "white",
+    "defaultTitle": ""
+  }
+}

@@ -1,0 +1,73 @@
+/* .vfmp-combo-box__container {
+	 position: relative;
+	 display: flex;
+	 flex-direction: column;
+	 width: 100%;
+} */
+
+@font-face {
+  font-family: VodafoneRg-Regular;
+  src: url('/assets/fonts/VodafoneRg.ttf');
+}
+
+@font-face {
+  font-family: VodafoneRg-Bold;
+  src: url('/assets/fonts/VodafoneRgBd.ttf');
+}
+
+.vfmp-combo-box__container {
+  display: block;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 3px;
+}
+
+.amd-picker-placeholder {
+    color: #666;
+    font-family: VodafoneRg-Regular, 'Segoe UI', Verdana, sans-serif;
+    font-size: 16px;
+    width: 100%;
+    padding-top: 10px;
+}
+.vfmp-input__clear-input-btn{
+  display: block;
+  top: 10px
+}
+.amd-picker-text{
+    color: #333;
+    font-family: VodafoneRg-Regular, 'Segoe UI', Verdana, sans-serif;
+    font-size: 16px;
+    width: 100%;
+    padding-top: 10px;
+    display: block
+}
+ .vfmp-combo-box__title {
+	 font-family: VodafoneRg-Regular, 'Segoe UI', Verdana, sans-serif;
+	 font-size: 12px;
+	 color: #666;
+	 margin-bottom: 12px;
+	 text-transform: uppercase;
+}
+ .vfmp-combo-box__selectBox {
+	 font-family: VodafoneRg-Bold, 'Segoe UI', Verdana, sans-serif;
+	 font-size: 16px;
+	 outline: none;
+	 position: relative;
+	 border: none;
+	 border-bottom: solid 1px #ccc;
+	 color: #333;
+	 -webkit-appearance: none;
+	 -moz-appearance: none;
+   background-color: #fff;
+
+}
+ .vfmp-combo-box__selectBox__border {
+	 height: 44px;
+	 padding: 0px 16px;
+	 border: 1px solid #999;
+	 border-radius: 5px;
+	 color: #999;
+	 font-family: VodafoneRg-Regular, 'Segoe UI', Verdana, sans-serif;
+	 font-size: 16px;
+	 line-height: 22px;
+}

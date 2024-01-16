@@ -1,0 +1,82 @@
+<view style="{{rootStyle}}">
+  <view>
+    <view id={{componentID}} aria-label={{componentID}} className="vfmp__list-row" style="{{extraStyle}}" onTap="listRowTap" data-value="{{value}}">
+      <view className="vfmp__list-row__content" style="{{extraContentStyle}}">
+
+        <view className="vfmp__list-row__left-element" style="{{leftIconStyle}}, position: relative" a:if="{{leftIconURL != ''}}">
+          <img src={{leftIconURL}} className="vfmp__list-row__left-image" />
+        </view>
+
+        <view className="vfmp__list-row__left-element" style="{{leftIconStyle}}" a:if="{{leftIconName != ''}}">
+          <icon height="32" iconName={{leftIconName}} color="{{leftIconColor}}" />
+        </view>
+
+
+
+        <view className="vfmp__column" style="marginTop: '14px', marginBottom: '14px', {{extraContainerStyle}}" a:if="{{description!='' || extraDescription != '' || componentDescription !=''}}">
+          <view className="vfmp__list-row__title" style={{labelStyle}} dangerouslySetInnerHTML={{label}}></view>
+
+          <view className="vfmp__list-row__description" style="{{descriptionStyle}}" a:if="{{componentDescription != ''}}">
+                    {{componentDescription}}
+          </view>
+
+          <view className="vfmp__list-row__description" style="{{descriptionStyle}}" a:if="{{description != ''}}">
+                    {{description}}
+          </view>
+
+
+
+          <view className="vfmp__list-row__extra-description" style="{{extraDescriptionStyle}}" a:if="{{extraDescription != ''}}">
+                    {{extraDescription}}
+          </view>
+
+        </view>
+
+        <view className="vfmp__list-row__label" a:if="{{description =='' || extraDescription == '' || componentDescription ==''}}" style="{{labelStyle}}" dangerouslySetInnerHTML={{label}}></view>
+
+
+
+        <view className="vfmp__column" style="
+                  marginTop: 14px,
+                  marginBottom: 14px,
+                  marginLeft: auto,
+                " a:if="{{rightLabel != '' || rightDescription != '' || rightLabelComponent != ''}}">
+          <view className="vfmp__list-row__rightLabel" style="{{rightLabelStyle}}" a:if="{{rightLabelComponent != ''}}">
+                    {{rightLabelComponent}}
+          </view>
+
+          <view className="vfmp__list-row__rightLabel" a:if="{{rightLabel != ''}}" style="{{rightLabelStyle}}, color: {{rightLabelColor}} }}">
+                    {{rightLabel}}
+          </view>
+
+
+          <view className="vfmp__list-row__rightDescription {{
+                      arrow ? (arrow === 'up' ? 'vfmp__list-row__rightDescription--arrowUp' : arrow === 'down' ? 'vfmp__list-row__rightDescription--arrowDown' : '') : ''
+                    }}" style= "color: {{rightDescriptionColor}}">
+                    {{rightDescription}}
+          </view>
+
+        </view>
+
+        <view className="vfmp__list-row__right-element" style="{{rightIconStyle}}" a:if="{{rightIconName != ''}}">
+          <icon height="32" iconName={{rightIconName}} color="#E60000" />
+        </view>
+
+
+
+        <view className="vfmp__list-row__right-status-chip" a:if="{{rightStatusChip != ''}}">
+          <status-chip componentID={{componentID + '-status-chip'}} />
+        </view>
+
+
+        <view className="vfmp__list-row__right-element vfmp__list-row__right-element--checkbox" a:if="{{hasCheckbox}}">
+          <input id={{componentID + '-checkbox'}} aria-label={{componentID  + '-checkbox'}} type="checkbox" className="vfmp__list-row__input" name="listRowCheckbox" defaultChecked={{checked}}
+                  onTap = "onCheckboxClick" />
+        </view>
+
+      </view>
+
+    </view>
+    <!-- <view className="vfmp__list-row__separator" style={{extraSeparatorStyle}} /> -->
+  </view>
+</view>

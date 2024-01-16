@@ -1,0 +1,19 @@
+<import-sjs from="/utils/formatNumber" name="formatCurrency" />
+
+<view class="suggestion-group">
+    <block a:for="{{ suggestionList }}" a:for-item="suggestion" >
+        <view
+      class="suggestion-item {{ suggestion == selected ? 'selected' : '' }}"
+      style="border: 1px solid {{suggestion == selected ? activeBorderColor : borderColor}}"
+      data-value="{{ suggestion }}"
+      onTap="onSuggestionClick"
+    >
+            <view>
+                <text>{{ formatCurrency.format(suggestion) }}</text>
+            </view>
+            <view>
+                <text> {{ currencySymbol }} </text>
+            </view>
+        </view>
+    </block>
+</view>

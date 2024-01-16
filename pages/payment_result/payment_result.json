@@ -1,0 +1,12 @@
+{
+  "pullRefresh": false,
+  "usingComponents": {
+    "list-confirmation-row": "../../components/ListConfirmationRow/ListConfirmationRow",
+    "result": "antd-mini/es/Result/index",
+    "m-nav": "/components/NavBar/NavBar",
+    "copy-chip": "/components/CopyChipButton/CopyChipButton",
+    "icon-button": "/components/IconButton/IconButton",
+    "toast": "/components/Toast/Toast",
+    "m-button": "/components/mpesa/m-btn/m-btn"
+  }
+}

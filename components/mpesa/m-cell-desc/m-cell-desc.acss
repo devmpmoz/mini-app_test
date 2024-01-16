@@ -1,0 +1,8 @@
+.m-cell__desc {
+  color: #999;
+  /* grey-70 */
+  font-family: VodafoneRg-Regular;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.34;
+}

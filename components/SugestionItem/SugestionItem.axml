@@ -1,0 +1,12 @@
+    <button
+      id={{componentID}}
+      aria-label={{componentID}}
+      type='button'
+      class="vfmp-suggestion-item__button {{selected ? 'vfmp-suggestion-item__button--selected' : ''}}
+      disabled={{suggestionDisabled}}
+      {{restOfStyles}}">
+      <view class='vfmp-suggestion-item__wrapper'>
+        <view class='vfmp-suggestion-item__text'>{{upperText}}</view>
+        <view class='vfmp-suggestion-item__text'>{{bottomText}}</view>
+      </view>
+    </button>

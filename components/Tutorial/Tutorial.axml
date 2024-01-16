@@ -1,0 +1,23 @@
+<view class='vfmp-tutorial__container'>
+
+  <view class='vfmp-tutorial__step-container'>
+    <swiper class="swiper" current="{{ currentStep }}" onChange="onSwipeStep">
+      <swiper-item a:for="{{ $slots }}" a:for-index="index">
+        <slot name="{{ index }}" />
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <view class='vfmp-tutorial__bullets'>
+    <block a:for="{{ $slots }}" a:for-index="index">
+      <view class="vfmp-tutorial__bullet {{ index == `step${currentStep}` ? 'selected' : '' }}" />
+    </block>
+  </view>
+
+  <view class='vfmp-tutorial__button'>
+    <m-button onTap="onClickNext">
+      {{ $slots[`step${currentStep}`][0].props.buttonText }}
+    </m-button>
+  </view>
+
+</view>

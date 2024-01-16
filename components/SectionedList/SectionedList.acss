@@ -1,0 +1,63 @@
+.list-empty {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-empty *:not(:last-child) {
+  margin-bottom: 16rpx;
+}
+
+.row-card {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  min-height: 64rpx;
+}
+
+.left-title{
+  line-height: 18px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.left-description {
+  line-height: 18px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.right-title {
+  line-height: 18px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.right-description {
+  line-height: 18px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.section-button {
+  color: #e60000;
+  line-height: 19px;
+  text-align: right;
+  float: right;
+  font-size: 16px;
+  font-family: VodafoneRg-Regular;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: fit-content;
+}
+
+.empty-title{
+  font-size: 32rpx;
+  line-height: 44rpx;
+  font-family: VodafoneRg-Regular;
+  font-weight: 400;
+  color: #666666;
+}

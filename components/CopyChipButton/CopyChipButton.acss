@@ -1,0 +1,25 @@
+@font-face {
+  font-family: VodafoneRg-Regular;
+  src: url('/assets/fonts/VodafoneRg.ttf');
+}
+
+.vfmp-copy-chip-button__button {
+  height: 48rpx;
+  line-height: 38rpx;
+  display: inline-flex;
+  gap: 6rpx;
+  padding: 4rpx 20rpx;
+  background-color: #ebebeb;
+  border-radius: 40rpx;
+  max-width: 100%;
+}
+
+.vfmp-copy-chip-button__button-text {
+  font-family: VodafoneRg-Regular;
+  font-size: 32rpx;
+  font-weight: 700;
+  letter-spacing: 1.46rpx;
+  color: #333333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

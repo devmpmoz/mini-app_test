@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "icon": "../Icon/Icon",
+    "loading": "antd-mini/es/Loading/index"
+  }
+}

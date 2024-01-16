@@ -1,0 +1,30 @@
+.suggestion-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 32rpx;
+}
+
+.suggestion-item {
+  display: flex;
+  font-family: VodafoneRg-Regular;
+  font-size: 28rpx;
+  border: 1px solid #808080;
+  border-radius: 12rpx;
+  width: 124rpx;
+  height: 124rpx;
+  justify-content: center;
+  align-items: center;
+  padding: 10rpx;
+  margin: 0 auto 15rpx 0rpx;
+  flex-direction: column;
+}
+
+.suggestion-item:last-child {
+  margin-right: 0rpx;
+}
+
+.suggestion-group .selected {
+  border-color: #e60000;
+  font-weight: 700;
+}

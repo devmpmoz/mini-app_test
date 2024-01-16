@@ -1,0 +1,24 @@
+<view>
+<list-item id={{componentID}} class="vfmp-combo-box__container" >
+  
+    <view class="vfmp-combo-box__title">
+        {{label}}
+    </view>
+    <picker 
+      class="vfmp-combo-box__selectBox vfmp-combo-box__selectBox__border vfmp-input__input--clear-icon"
+      slot="extra"
+      data-value="test"
+      onDismiss="handleDismissPicker"
+      onTriggerPicker="handleTriggerPicker"
+      onOk="handleOk"
+      value="{{value}}"
+      placeholder="{{placeholder}}"
+      title="{{title}}"
+      onChange="handleChange"
+      data="{{list}}">
+      <view class="vfmp-input__clear-input-btn" onTap="onClearButtonClick">
+        <icon iconName="chevron-down.svg"/>
+      </view>
+    </picker>
+  </list-item>
+</view>

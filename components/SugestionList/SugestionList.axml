@@ -1,0 +1,3 @@
+  <div id={{componentID}} aria-label={{componentID}} class="vfmp-suggestion-list__container {{suggestionListclass}}" >
+      {{suggestionItems}}
+  </div>

@@ -1,0 +1,3 @@
+.m-transition-visible {
+  opacity: 1;
+}

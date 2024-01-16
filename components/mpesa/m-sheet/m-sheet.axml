@@ -1,0 +1,10 @@
+<import-sjs name="element" from="/utils/element.sjs"/>
+
+<view class="{{ element.classAttr('m-sheet--container', className) }}" style="display: {{ visible ? 'flex' : 'none' }};">
+  <transition name="m-fade" visible="{{ !leaving }}">
+    <m-overlay slot-scope="props" class="{{ props.transitionClass }}" onTap="dismiss"/>
+  </transition>
+  <swipe disabled="{{ !swipe }}" class="m-sheet {{ sheetClass }}" animation="{{ sheetAnimation }}" onSwipeEnd="onSwipeEnd">
+    <slot/>
+  </swipe>
+</view>

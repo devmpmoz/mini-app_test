@@ -1,0 +1,22 @@
+<import-sjs name="element" from="/utils/element.sjs"/>
+
+<view class="{{ element.classAttr('m-sheet--container', className) }}" style="display: {{ visible ? 'flex' : 'none' }};">
+  <!-- <transition name="m-fade" visible="{{ !leaving }}">
+  </transition> -->
+  <swipe disabled="{{ true }}" class="m-sheet {{ sheetClass }}" animation="{{ sheetAnimation }}" onSwipeEnd="onSwipeEnd">
+    <view class="m-page-modal">
+      <view class="content m-flex m-flex-center m-text-center">
+        <view class="my-auto"/>
+        <slot name="image"/>
+        <view class="my-20"/>
+        <view class="m-body title-20">{{ title }}</view>
+        <view class="my-16"/>
+        <view a:if="{{ !showBodySlot }}" class="m-body px-24">{{ body1 }}</view>
+        <slot a:else name="body1"></slot>
+        <view class="my-auto"/>
+      </view>
+  
+      <slot name="action"/>
+    </view>
+  </swipe>
+</view>

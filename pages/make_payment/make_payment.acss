@@ -1,0 +1,11 @@
+.changeColor {
+  font-size: 30px;
+  color: #f32600;
+}
+
+.vm_page {
+  background-color: white;
+  margin: 10rpx;
+  padding: 30rpx;
+  border-radius: 10rpx;
+}

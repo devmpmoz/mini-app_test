@@ -1,0 +1,38 @@
+<import-sjs from="/utils/formatNumber.sjs" name="numberFormat" />
+<import-sjs from="/utils/formatDate.sjs" name="dateFormat" />
+
+<view class="container">
+  <m-nav size="small" title="{{ i18n.paymentDetails.appBarTitle }}" />
+
+  <view class="body">
+    <view class="card">
+      <view class="content">
+        <labeled-list-row label="{{ i18n.paymentDetails.meterName }}" value="{{ paymentInfo.meterName || '-' }}" />
+        <labeled-list-row label="{{ i18n.paymentDetails.meterNumber }}" value="{{ paymentInfo.meterNumber || '-' }}" />
+        <labeled-list-row label="{{ i18n.paymentDetails.voucher }}" value="{{ formattedVoucher || '-' }}" />
+        <labeled-list-row label="{{ i18n.paymentDetails.txFees }}" value="{{ numberFormat.currency(paymentInfo.fees, 2, i18n.common.unavailable) }}" />
+        <labeled-list-row a:if="{{ createDateFormated }}" label="{{ i18n.paymentDetails.date }}" value="{{ createDateFormated }}" />
+        <labeled-list-row label="{{ i18n.paymentDetails.total }}">
+          <text slot="value" class="total">{{ numberFormat.currency(paymentInfo.totalPaid, 2, i18n.common.unavailable) }}</text>
+        </labeled-list-row>
+      </view>
+
+      <view class="action-buttons-container">
+        <icon-button
+          isVertical="{{true}}"
+          label="{{ i18n.paymentDetails.download }}"
+          iconName="si_download.svg"
+          width="18"
+          height="18"
+          onButtonClick="handleDownloadReceipt"
+          iconExtraStyle="margin-top: 4rpx"
+        ></icon-button>
+      </view>
+      <view class="action-section m-flex p-16">
+        <m-button onTap="{{ canRepay ? 'onRepay' : 'onBack'}}">
+          {{ canRepay ? i18n.paymentDetails.primaryBtnRepay : i18n.paymentDetails.primaryBtn }}
+        </m-button>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,71 @@
+@font-face {
+  font-family: VodafoneRg-Regular;
+  src: url('/assets/fonts/VodafoneRg.ttf');
+}
+
+.vfmp__primary-button {
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background-color: #666;
+  font-family: VodafoneRg-Regular, 'Segoe UI', Verdana, sans-serif;
+  font-size: 18px;
+  color: #fff;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.vfmp__primary-button--red {
+  background-color: #e60000;
+}
+
+.vfmp__primary-button[disabled] {
+  background: #ccc;
+  color: #fff;
+}
+
+.vfmp__primary-button--rounded {
+  border-radius: 25px;
+  min-width: 50px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.vfmp__primary-button--rounded--center-icon {
+  min-width: 44px;
+  max-width: 44px;
+}
+
+.vfmp__primary-button--rounded--center-icon .content {
+  justify-content: center !important;
+}
+
+.vfmp__primary-button--rounded--center-icon .content .icon-left {
+  display: flex;
+  min-width: 0px !important;
+  flex-shrink: 0;
+}
+
+.vfmp__primary-button .content {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+
+.vfmp__primary-button .content .icon-left {
+  display: flex;
+  min-width: 20px;
+  flex-shrink: 0;
+}
+
+.vfmp__primary-button .content .icon-right {
+  display: flex;
+  min-width: 20px;
+  flex-shrink: 0;
+}
+
+.button-icon {
+  padding-left: 5px;
+  padding-right: 5px;
+}

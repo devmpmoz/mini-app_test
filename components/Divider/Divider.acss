@@ -1,0 +1,41 @@
+.m-divider {
+  display: block;
+  height: .5px;
+  margin: 0;
+  background-color: transparent;
+  border: 0;
+}
+
+.m-divider.box-4 {
+  border-top: 4px solid #f5f5f5;
+  /* @grey-10 */
+}
+
+.m-divider.box-8 {
+  border-top: 8px solid #f5f5f5;
+  /* @grey-10 */
+}
+
+.m-divider.box-12 {
+  border-top: 12px solid #f5f5f5;
+  /* @grey-10 */
+}
+
+.m-divider.box-16 {
+  border-top: 16px solid #f5f5f5;
+  /* @grey-10 */
+}
+
+.m-divider.line-full {
+  border-top: .5px solid #d1d1d1;
+  /* @grey-30 */
+  transform: scaleY(1.1)
+}
+
+.m-divider.title {
+  color: #727272;
+  /* @grey-70 */
+  height: inherit;
+  background-color: #f5f5f5;
+  /* @grey-10 */
+}

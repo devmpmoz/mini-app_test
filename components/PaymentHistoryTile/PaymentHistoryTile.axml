@@ -1,0 +1,22 @@
+<import-sjs name="element" from="/utils/element.sjs" />
+
+<m-cell class="{{ element.classAttr('', className) }}" onTap="onTap" value="{{ value }}">
+  <m-cell-content>
+    <view>
+      <slot name="trailing-title" />
+    </view>
+    <m-cell-desc class="mt-6">
+      <view>
+        <slot name="trailing-description" />
+      </view>
+    </m-cell-desc>
+  </m-cell-content>
+  <m-cell-action class="m-flex m-flex-column m-align-end m-text-right">
+    <view>
+      <slot name="leading-title" />
+    </view>
+    <view>
+      <slot name="leading-description" />
+    </view>
+  </m-cell-action>
+</m-cell>

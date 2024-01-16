@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "m-alert-modal": "/components/mpesa/m-alert-modal/m-alert-modal",
+    "m-button": "/components/mpesa/m-btn/m-btn"
+  }
+}

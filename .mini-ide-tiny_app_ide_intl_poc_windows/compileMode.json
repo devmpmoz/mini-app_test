@@ -1,0 +1,39 @@
+{
+  "modes": [
+    {
+      "title": "make payment",
+      "page": "pages/make_payment/make_payment"
+    },
+    {
+      "title": "favourites",
+      "page": "pages/favourites/favourites"
+    },
+    {
+      "title": "payment_resume",
+      "page": "pages/payment_resume/payment_resume"
+    },
+    {
+      "title": "payment_result",
+      "page": "pages/payment_result/payment_result",
+      "pageQuery": "meterName=Algy&amount=350"
+    },
+    {
+      "title": "save-meter",
+      "page": "pages/save-meter/save-meter",
+      "pageQuery": "meterNo=8293754052535"
+    },
+    {
+      "title": "show-voucher-details",
+      "page": "pages/show-voucher-details/show-voucher-details"
+    },
+    {
+      "title": "favourite-added",
+      "page": "pages/favourite-added/favourite-added"
+    },
+    {
+      "title": "Replace Meter",
+      "page": "pages/replace-favourite/replace-favourite",
+      "pageQuery": "meterName=Algy&meterNo=12345678901"
+    }
+  ]
+}

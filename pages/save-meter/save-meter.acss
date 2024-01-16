@@ -1,0 +1,7 @@
+.info-message {
+  font-family: VodafoneRg-Regular;
+  color: #666;
+  font-size: 28rpx;
+  line-height: 32rpx;
+  margin-bottom: 32rpx;
+}

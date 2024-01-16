@@ -1,0 +1,41 @@
+<view class="container">
+  <m-nav size="small" title="{{ i18n.editFavourite.appBarTitle }}" />
+
+  <view class="body">
+    <view class="card">
+      <view class="content">
+        <view class="mb-8">
+          <input-mpesa
+            field="meterName"
+            label="{{ i18n.editFavourite.meterNameFld }}"
+            description="{{ meterName.length + '/20' }}"
+            value="{{ meterName }}"
+            onInput="handleInputChange"
+            onValidation="meterNameValidator"
+          />
+        </view>
+        <view class="mb-8">
+          <input-mpesa
+            field="meterNo"
+            type="number"
+            label="{{ i18n.editFavourite.meterNumberFld }}"
+            description="{{ meterNo.length + '/11' }}"
+            value="{{ meterNo }}"
+            onInput="handleInputChange"
+            onValidation="meterNoValidator"
+          />
+        </view>
+      </view>
+
+      <view class="action-section m-flex m-flex-row p-16">
+        <m-button
+          onTap="onSave"
+          disabled="{{ !isMeterNameValid || !isMeterNoValid }}"
+          loading="{{isLoading}}"
+        >
+          {{ i18n.editFavourite.primaryBtn }}
+        </m-button>
+      </view>
+    </view>
+  </view>
+</view>

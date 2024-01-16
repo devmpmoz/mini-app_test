@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "picker": "antd-mini/es/Picker/index",
+    "list": "antd-mini/es/List/index",
+    "list-item": "antd-mini/es/List/ListItem/index",
+    "demo-block": "../DemoBlock/index",
+    "icon": "../Icon/Icon"
+  }
+}

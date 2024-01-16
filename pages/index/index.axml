@@ -1,0 +1,101 @@
+<block a:if="{{ !isOnboarding }}">
+  <view scroll-y="{{true}}" class="container">
+    <m-nav
+      size="small"
+      title="{{ i18n.home.appBarTitle }}"
+      extraToolbarComponents="{{ true }}"
+    >
+      <view class="nav-container">
+        <view class="nav-title ml-16">
+          {{ i18n.home.favouriteMetersTitle }}
+        </view>
+        <view class="nav-button">
+          <icon-button label="{{i18n.home.favourites.editFavourites}}" borderColor="rgba(255,255,255,0.6)" iconName="si_edit-w.svg" width="16" height="16" horizontalIconExtraStyle="display:flex; margin-right: 8rpx; width: 32rpx; height: 32rpx;" onButtonClick="onEditFavourites"></icon-button>
+        </view>
+      </view>
+    </m-nav>
+    
+    <view class="container-content" style="margin-top:-136rpx; position: relative;">
+        <block>
+          <swiper
+            interval="{{0}}"
+            nextMargin="12px"
+            previousMargin="12px"
+            adjust-height-with-highest-item="{{true}}"
+            style="margin-top:0; min-height: {{isLoadingMeters || favouriteMeters.length ? '274rpx' : null }}"
+            active-class="active-item"
+            current="{{carouselCurrentIdx}}"
+            onChange="manageCarouselIdx"
+          >
+            <block a:if="{{isLoadingMeters || !favouriteMeters || !favouriteMeters.length}}">
+                <view class="carousel-wrapper" > 
+                  <card-item 
+                    key="no_favs"
+                    topDescription="{{i18n.home.favourites.favouritesEmptyDescription}}"
+                    topTitle="{{i18n.home.favourites.favouritesEmptyTitle}}"
+                    bottomText="{{isLoadingMeters ? 'Loading': ''}}"
+                    buttonText="{{i18n.home.favourites.favouritesEmptyButton}}"
+                    onTap="goAddFavourite"
+                    onlyTitle="{{isLoadingMeters}}"
+                    isSmallCard="{{!isLoadingMeters}}"
+                    isLoading="{{isLoadingMeters}}"
+                    />
+                </view>
+                  
+            </block>
+            <block a:elif="{{ favouriteMeters.length }}" >
+              <block
+                a:for="{{ favouriteMeters }}"
+                a:for-item="meter"
+                a:for-index="id"
+                >
+                <swiper-item>
+                  <view class="carousel-wrapper"> 
+                    <card-item
+                      key="{{id}}"
+                      bottomText="{{ meter.name }}"
+                      topTitle="{{ i18n.common.meter }}: {{ meter.reference }}"
+                      buttonText="{{ i18n.home.recharge }}"
+                      onTap="onTapFavourite"
+                      value="{{ meter }}"
+                      topTitleExtraStyle="height:auto; margin:auto auto auto 0;"
+                      buttonTextExtraStyle="font-size: 26rpx; line-height:28rpx;"
+                    />  
+                  </view>
+                </swiper-item>
+            </block>
+          </block>
+            
+          </swiper>
+        <view class="mx-16 mt-8 mb-16">
+          <m-divider style="border-color: #cccccc" />
+        </view>
+      </block>
+
+      <card class="mx-16">
+        <list-row
+          wrapperExtraClass="new-payment-button"
+          rightIconWrapperExtraClass="new-payment-button-right-icon"
+          label="{{ i18n.home.makeNewPayment }}"
+          trailingIconSrc="/assets/icons/si_savings-b.svg"
+          leadingIconSrc="/assets/icons/si_chevron_right-r.svg"
+          onTap="goToPayment"
+        />
+      </card>
+  
+      <sectioned-list sections="{{ sections }}" isLoading="{{isLoadingPayments}}" emptyIcon="/assets/illustrations/savings-grey.svg" emptyTitle="{{i18n.home.emptyPayments}}"/>
+
+    </view>
+  </view>
+  
+</block>
+
+<toast
+  content="{{toastContent}}" 
+  duration="{{5000}}" 
+  showMask="{{false}}" 
+  visible="{{showToast}}"
+  onClose="onToastClose" 
+  data-index="1"
+  type="{{toastType}}"
+/>

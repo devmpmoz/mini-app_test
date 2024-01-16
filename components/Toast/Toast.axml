@@ -1,0 +1,29 @@
+<view 
+  class="toast {{className || ''}} {{type === 'warning' ? 'toast-warning' : type==='error' ? 'toast-error' : ''}}" 
+  a:if="{{show}}" 
+  style="{{wrapperExtraStyle || ''}}"
+>
+  <view a:if="{{type}}" class="toast-normal" style="{{iconLeftWrapperExtraStyle}}">
+    <loading 
+      a:if="{{type === 'loading'}}" 
+      type="mini" 
+    />
+    <icon a:elif="{{type === 'warning'}}" iconName="warning.svg" height="24" otherStyles="display: flex; margin: auto; {{iconLeftExtraStyle}}" />
+    <icon a:elif="{{type === 'error'}}" iconName="error.svg" height="24" otherStyles="display: flex; margin: auto; {{iconLeftExtraStyle}}" />
+    <icon a:elif="{{type === 'success'}}" iconName="round-check.svg" height="24" otherStyles="display: flex; margin: auto; {{iconLeftExtraStyle}}" />
+  </view>
+  <view class="toast-text-content {{type === 'warning' ? 'toast-text-content-warning' : type==='error' ? 'toast-text-content-error' : ''}}" style="{{textExtraStyle}}">
+    {{content}}
+  </view>
+  <view onTap="onTapClose" style="{{iconRightWrapperExtraStyle}}">
+    <icon iconName="round-close.svg" height="24" otherStyles="display: flex; margin: auto; {{iconRightExtraStyle}}" />
+  </view>
+</view>
+
+<mask 
+  className="toast-mask"
+  a:if="{{show && showMask}}"
+  show="{{true}}"
+  onMaskTap="handleClickMask" 
+  style="{{maskStyle}}" 
+/>

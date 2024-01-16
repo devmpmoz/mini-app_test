@@ -1,0 +1,8 @@
+<import-sjs name="element" from="/utils/element.sjs"/>
+
+<button class="{{ element.classAttr(defaultClasses, className) }}" hover-class="{{defaultClasses}}" onTap="onTap" disabled="{{disabled}}">
+  <slot a:if="{{ !loading }}"></slot>
+  <view a:else class="m-btn-loading-container">
+    <loading  color="{{loadingColor}}" class="m-btn-loading" />
+  </view>
+</button>

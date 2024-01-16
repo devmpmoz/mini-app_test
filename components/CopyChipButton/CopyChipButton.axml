@@ -1,0 +1,6 @@
+<button id={{componentID}} aria-label={{componentID}} class="vfmp-copy-chip-button__button" onTap="handleOnTap" icon>
+  <view class='vfmp-copy-chip-button__button-text'>
+    {{value}}
+  </view>
+  <icon iconName="copy.svg" height="16" width="16"></icon>
+</button>

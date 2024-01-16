@@ -1,0 +1,55 @@
+<import-sjs from="/utils/formatNumber.sjs" name="numberFormat" />
+
+<view class="container">
+  <m-nav size="small" title="{{ i18n.receipt.appBarTitle }}" />
+
+  <view class="ticket">
+    <view class="top">
+      <text class="descriptionText">{{ i18n.receipt.title }}</text>
+      <text class="titleText">{{ amount != undefined ? numberFormat.currency(amount) : i18n.receipt.unavailable }}</text>
+    </view>
+    <view class="middle"></view>
+    <view class="bottom">
+      <view class="fieldsContainer">
+        <labeled-list-row label="{{ i18n.receipt.service }}" value="{{ i18n.receipt.credelec }}">
+        </labeled-list-row>
+        <labeled-list-row a:if="{{ voucher.meter }}" label="{{ i18n.receipt.meterNumber }}" value="{{ voucher.meter }}">
+        </labeled-list-row>
+        <labeled-list-row a:if="{{ formattedToken }}" label="{{ i18n.receipt.token }}" value="{{ formattedToken }}">
+        </labeled-list-row>
+        <labeled-list-row a:if="{{ voucher.energyValue !== undefined }}" label="{{ i18n.receipt.energyCost }}" value="{{ numberFormat.currency(voucher.energyValue) }}">
+        </labeled-list-row>
+        <labeled-list-row a:if="{{ voucher.vat !== undefined }}" label="{{ i18n.receipt.vat }}" value="{{ numberFormat.currency(voucher.vat) }}">
+        </labeled-list-row>
+        <labeled-list-row a:if="{{ voucher.debtPaid !== undefined }}" label="{{ i18n.receipt.paidDebt }}" value="{{ numberFormat.currency(voucher.debtPaid) }}">
+        </labeled-list-row>
+        <labeled-list-row a:if="{{ voucher.debtAmount !== undefined }}" label="{{ i18n.receipt.amountDebt }}" value="{{ numberFormat.currency(voucher.debtAmount) }}">
+        </labeled-list-row>
+        <labeled-list-row a:if="{{ voucher.garbageFee !== undefined }}" label="{{ i18n.receipt.taxGarbage }}" value="{{ numberFormat.currency(voucher.garbageFee) }}">
+        </labeled-list-row>
+        <labeled-list-row a:if="{{ voucher.radioFee !== undefined }}" label="{{ i18n.receipt.taxRadio }}" value="{{ numberFormat.currency(voucher.radioFee) }}">
+        </labeled-list-row>
+        <labeled-list-row a:if="{{ voucher.amountPaid !== undefined }}" label="{{ i18n.receipt.totalPayment }}" value="{{ numberFormat.currency(voucher.amountPaid) }}">
+        </labeled-list-row>
+        <labeled-list-row a:if="{{ voucher.energyUnit !== undefined }}" label="{{ i18n.receipt.energyUnits }}" value="{{ voucher.energyUnit }}">
+        </labeled-list-row>
+        <labeled-list-row a:if="{{ voucher.reference }}" label="{{ i18n.receipt.reference }}" value="{{ voucher.reference }}">
+        </labeled-list-row>
+        <labeled-list-row a:if="{{ voucher.createDate }}" label="{{ i18n.receipt.dateTime }}" value="{{ createDateFormated || i18n.common.unavailable }}" />
+      </view>
+      <m-button  onTap="onDownloadReceipt" style="margin-top: 76rpx;" loading="{{downloadInProgress}}" >
+        {{i18n.receipt.download}}
+      </m-button>
+    </view>
+  </view>
+</view>
+
+<toast
+  content="{{toastContent}}" 
+  duration="{{5000}}" 
+  showMask="{{false}}" 
+  visible="{{showToast}}"
+  onClose="onToastClose" 
+  data-index="1"
+  type="{{toastType}}"
+/>

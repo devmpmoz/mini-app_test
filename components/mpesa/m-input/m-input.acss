@@ -1,0 +1,241 @@
+.m-input {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.m-input__text-box {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  position: relative;
+}
+
+.m-input__label {
+  font-family: VodafoneRg-Regular;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 1.29;
+  margin-bottom: 4px;
+}
+
+.m-input__text-box--small-label .m-input__label {
+  font-size: 12px;
+  line-height: 1.33;
+}
+
+.m-input__container {
+  position: relative;
+  width: 100%
+}
+
+.m-input__wrapper {
+  position: relative;
+  display: flex;
+  width: 100%
+}
+
+.m-input__icon-inner-left {
+  position: absolute;
+  z-index: 1;
+  left: 10px;
+  top: 10px;
+}
+
+.m-input__icon-inner-left image, .m-input__icon-inner-left view {
+  max-height: 21px;
+  max-width: 21px;
+}
+
+.m-input__icon-outter-right view, .m-input__icon-outter-right image {
+  max-height: 28px;
+  max-width: 28px;
+  min-height: 28px;
+  min-width: 28px;
+  margin: 28px 0px 0px 8px;
+}
+
+.m-input__text-box input {
+  font-family: VodafoneRg-Regular;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 1.25;
+  flex: 1;
+  padding: 10px 12px;
+  border: solid 1px #313131;
+  border-radius: 4px;
+  resize: none;
+  caret-color: #000;
+  padding: 10px 28px 10px 12px;
+  transition: border 0.1s linear;
+  box-sizing: border-box;
+  height: 42px;
+}
+
+.m-input__text-box.m-input--focus input {
+  border: solid 1px #000;
+  outline: none;
+  box-shadow: none;
+}
+
+.m-input__text-box input.has-icon-inner-left {
+  padding-left: 40px;
+}
+
+.m-input input.error {
+  border: solid 1px #e60000;
+}
+
+.m-input__clear-button {
+  position: absolute;
+  right: 8px;
+  top: 10px;
+  width: 24px;
+  height: 24px
+}
+
+.m-input__clear-button image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  transform: translate(-50%, -50%)
+}
+
+.m-input__loader {
+  position: absolute;
+  top: 13px;
+  right: 11px;
+  width: 18px;
+  height: 18px;
+  animation: loader-spinner 1.0s linear infinite;
+}
+
+@keyframes loader-spinner {
+  0% {
+    transform: rotate(0deg);
+    animation-delay: -1s;
+  }
+  12.5% {
+    transform: rotate(45deg);
+    animation-delay: -.875s;
+  }
+  25% {
+    transform: rotate(90deg);
+    animation-delay: -.75s;
+  }
+  37.5% {
+    transform: rotate(135deg);
+    animation-delay: -.625s;
+  }
+  50% {
+    transform: rotate(180deg);
+    animation-delay: -.5s;
+  }
+  62.5% {
+    transform: rotate(225deg);
+    animation-delay: -.375s;
+  }
+  75% {
+    transform: rotate(270deg);
+    animation-delay: -.25s;
+  }
+  82.5% {
+    transform: rotate(315deg);
+    animation-delay: -.125s;
+  }
+  100% {
+    transform: rotate(360deg);
+    animation-delay: 0s;
+  }
+}
+
+.m-input__helper-default {
+  font-family: VodafoneRg-Regular;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 1.34;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2px;
+  color: #727272
+}
+
+.m-input__helper-error {
+  font-family: VodafoneRg-Regular;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 1.34;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2px;
+  color: #e60000
+}
+
+.m-input__text-field {
+  flex: 1;
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+.m-input__text-field .m-input__label {
+  font-family: VodafoneRg-Regular;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 1.34;
+  position: absolute;
+  top: 0;
+  color: #727272;
+  transition: color 0.15s linear;
+  z-index: 1;
+}
+
+.m-input__text-field input {
+  -webkit-appearance: none;
+  font-family: VodafoneRg-Regular;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 1.25;
+  position: relative;
+  width: 100%;
+  padding: 19px 28px 5px 0;
+  color: #313131;
+  border: none;
+  border-bottom: solid 1px #bfbfbf;
+  transition: border-bottom 0.15s linear;
+}
+
+.m-input__text-field.m-input--focus .m-input__label {
+  color: #fca73e;
+}
+
+.m-input__text-field.m-input--focus input {
+  border-bottom-color: #fca73e;
+}
+
+.m-input__text-field .m-input__clear_button {
+  top: 20px;
+}
+
+.m-input__text-field--amount input {
+  font-family: VodafoneRg-Regular;
+  font-weight: 200;
+  font-size: 27px;
+  line-height: 1.34;
+}
+
+.m-input__text-field--amount .m-input__icon-inner-left {
+  font-family: VodafoneRg-Regular;
+  font-weight: 200;
+  font-size: 27px;
+  left: 0;
+  top: 16px;
+}
+
+.m-input__text-field--amount input.has-icon-inner-left {
+  padding-left: 35px;
+}

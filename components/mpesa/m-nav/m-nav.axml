@@ -1,0 +1,7 @@
+<import-sjs name="element" from="/utils/element.sjs"/>
+
+<view class="{{ element.classAttr(defaultClasses, className) }}" onTap="onTap">
+  <view class="m-nav title" a:if="{{title}}">
+    {{title}}
+  </view>
+</view>

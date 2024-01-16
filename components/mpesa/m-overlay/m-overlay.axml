@@ -1,0 +1,6 @@
+<import-sjs name="element" from="/utils/element.sjs"/>
+
+<view class="{{ element.classAttr('m-overlay m-overlay--' + type, className) }}" onTap="onTap">
+  <view a:if="{{ type == 'blur' }}" class="background"/>
+  <slot/>
+</view>

@@ -1,0 +1,17 @@
+.container-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.list-empty {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-empty *:not(:last-child) {
+  margin-bottom: 16rpx;
+}

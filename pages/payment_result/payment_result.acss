@@ -1,0 +1,82 @@
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  padding-bottom: 0;
+}
+
+.title {
+  font-size: 18px;
+  font-family: VodafoneRg-Regular;
+}
+
+text #bold {
+  font-weight: bold;
+}
+
+.description {
+  font-size: 16px;
+  font-family: VodafoneRg-Regular;
+  font-weight: 200;
+}
+
+.bottom-buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 32rpx;
+}
+
+.confirm-title {
+  font-family: VodafoneRg-Regular;
+  font-size: 40rpx;
+  line-height: 48rpx;
+  text-align: center;
+  padding: 0 16rpx 0 16rpx;
+}
+
+.confirm-description {
+  font-family: VodafoneRg-Regular;
+  font-size: 32rpx;
+  line-height: 48rpx;
+  text-align: center;
+  padding: 32rpx 16rpx 0 16rpx;
+}
+
+.copy-chip {
+  margin: 0 48rpx 0 48rpx;
+}
+
+.vfmp-copy-chip-button__button{
+  height: auto;
+}
+.vfmp-copy-chip-button__button-text{
+  font-size: 36rpx;
+  line-height: 40rpx;
+  letter-spacing: 1.46rpx;
+}
+
+.vfmp-copy-chip-button__button view{
+  display: flex;
+  margin: auto;
+}
+
+.confirm-parameters {
+  font-family: VodafoneRg-Regular;
+  font-size: 32rpx;
+  line-height: 48rpx;
+  text-align: center;
+  padding: 0rpx 16rpx 0 16rpx;
+}
+
+.action-buttons-container {
+  display: flex;
+  justify-content: center;
+}
+
+.mt-24 {
+  margin-top: 48rpx;
+}

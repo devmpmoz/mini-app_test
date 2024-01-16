@@ -1,0 +1,60 @@
+.m-sheet--container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.m-sheet {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  z-index: 101;
+  bottom: 0px;
+  max-height: 80vh;
+  transform: translateY(80%);
+  background-color: white;
+}
+
+.m-sheet--rounded-top {
+  border-radius: 8px 8px 0 0;
+}
+
+.m-sheet .dash {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.m-sheet .dash::after {
+  content: '';
+  width: .65rem;
+  height: .08rem;
+  background-color: #e3e3e3;
+  /* @grey-20 */
+  border-radius: .07rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.m-sheet--swipe {
+  background: initial;
+  display: flex;
+  height: initial;
+  pointer-events: none;
+  box-shadow: none;
+}
+
+.m-sheet--swipe * {
+  position: relative;
+  pointer-events: auto;
+  width: 100%;
+  max-height: 100%;
+}
+
+.m-sheet--swipe .m-card__actions {
+  position: sticky;
+  bottom: 0;
+}

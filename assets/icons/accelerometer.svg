@@ -1,0 +1,17 @@
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+  <title>Icons / System / accelerometer / #FFFFFF@1.5x</title>
+  <desc>
+    Created with Sketch.
+  </desc>
+  <g id="Icons-/-System-/--accelerometer-/-#FFFFFF" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+    <g id="Accelerometer">
+      <polygon id="bg" fillOpacity="0" fill="transparent" points="0 0 24 0 24 24 0 24"/>
+      <path d="M18.7175,5.2824875 C22.427475,8.9924625 22.427475,15.0075375 18.7175,18.7174875 C15.007525,22.4274625 8.99245,22.4274625 5.2825,18.7174875 C1.572525,15.0075125 1.572525,8.9924375 5.2825,5.2824875 C8.992475,1.5725125 15.00755,1.5725125 18.7175,5.2824875" id="Shape" stroke="#333333" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M12.95,12.9075 L12.95,12.9075 C12.4577762,13.41146 11.6502125,13.4209738 11.14625,12.92875 C10.64229,12.4365263 10.6327762,11.6289625 11.125,11.125 C11.125,11.125 11.125,11.125 11.125,11.125 L11.1250001,11.1249999 C11.5986663,10.6227737 12.3897876,10.5996212 12.8920126,11.073288 C12.8921758,11.073442 12.892339,11.073596 12.8925021,11.07375 L12.9062521,11.08625 L16.5737521,7.41875002" id="Shape" stroke="#E60000" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M12,5 L12,7" id="Shape" stroke="#FFFFFF" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M7.05,7.05 L8.465,8.465" id="Shape" stroke="#333333" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M5,12 L7,12" id="Shape" stroke="#333333" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M17,12 L19,12" id="Shape" stroke="#333333" strokeLinecap="round" strokeLinejoin="round"/>
+    </g>
+  </g>
+</svg>

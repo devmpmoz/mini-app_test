@@ -1,0 +1,16 @@
+.vm_page {
+  background-color: white;
+  margin: 10rpx;
+  padding: 30rpx;
+  border-radius: 10rpx;
+}
+
+.m-body{
+  font-size: 32rpx;
+  line-height: 48rpx;
+}
+
+.title-20 {
+  font-size: 40rpx;
+  line-height: 52rpx;;
+}

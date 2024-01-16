@@ -1,0 +1,11 @@
+<import-sjs name="element" from="/utils/element.sjs" />
+<view class="{{ isFullComponentsBackground ? 'vfmp-nav' : 'vfmp-nav-sticky-position' }}">
+  <view class="{{ element.classAttr(defaultClasses, className) }}" onTap="onTap" style="height: {{titleBarHeight + statusBarHeight + 10}}px; {{navBarExtraStyle}}">
+    <view a:if="{{title}}" class="title" style="margin-bottom: auto; margin-top: {{ statusBarHeight }}px; line-height: {{titleBarHeight}}px; {{titleExtraStyle}}">
+      {{title}}
+    </view>
+  </view>
+</view>
+<view a:if="{{ extraToolbarComponents }}" style="{{ toolbarComponentsExtraStyle }}">
+  <slot/>
+</view>

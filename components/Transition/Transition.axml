@@ -1,0 +1,1 @@
+<slot transitionClass="{{ transitionClass }} {{ slotVisible ? 'm-transition-visible' : '' }}"/>

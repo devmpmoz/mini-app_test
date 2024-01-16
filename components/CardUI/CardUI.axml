@@ -1,0 +1,65 @@
+<view style="background-color: {{cardBackgroundColor}}" class="vfmp-card-ui_main_container">
+  <view a:if="{{!cardHasTwoLogos}}">
+    <view class="vfmp-card-ui__container-blocked" style={{lockedContainerExtraStyle}} a:if="{{isLocked}}">
+      <view class="vfmp-card-ui__container-blocked__wrapper" style={{lockedExtraStyle}}>
+        <view class="vfmp-card-ui__container-blocked__icon" id={{componentID + '-lockedIcon'}} style={{lockedIconExtraStyle}} aria-label={{componentID && componentID + '-lockedIcon'}}
+                    >
+          <view fallback={{null}}>
+            <icon height={{lockedIconSize}} iconColor={{lockedIconColor}} iconName={{lockedIcon}} />
+          </view>
+        </view>
+        <view class="vfmp-card-ui__container-blocked__title" style={{lockedTitleExtraStyle}}>
+                      {{lockedTitle}}
+        </view>
+      </view>
+    </view>
+
+    <view class={{'vfmp-card-ui__upper-row '}}>
+      <view class="vfmp-card-ui__upper-row__left">
+        <view class="vfmp-card-ui__title" style={{firstTitleStyle}}>
+                    {{firstTitle}}
+        </view>
+        <view class="vfmp-card-ui__content" style={{firstContentStyle}} id={{componentID ? (isInformationShown ? componentID + '-informationDisplayed' : componentID + '-informationHidden') : 'undefined'}} aria-label={{componentID ? (isInformationShown ? componentID + '-informationDisplayed' : componentID + '-informationHidden') : 'undefined'}}
+                  >
+                    {{isInformationShown ? firstContent : '**** **** **** ****'}}
+        </view>
+      </view>
+      <view class="vfmp-card-ui__upper-row__right" style={{toggleStyle}}>
+
+        <view a:if="{{isLoading}}">
+          <icon width="42" height="26" iconColor={{toggleBackgroundColor === '' ? '#fff' : toggleBackgroundColor}} iconName="loader" />
+        </view>
+
+        <toggle a:else checked={{isInformationShown}} toggleDisabled={{toggleDisabled}} backgroundColor={{toggleBackgroundColor}} componentID={{componentID + '-toggle'}}
+                    />
+      </view>
+    </view>
+    <view class="vfmp-card-ui__bottom-row">
+      <view class="vfmp-card-ui__bottom-row__left" style={{secondWrapperStyle}}>
+        <view class="vfmp-card-ui__content-bottom--title" style={{secondTitleStyle}}>
+                    {{secondTitle}}
+        </view>
+        <view class="vfmp-card-ui__content-bottom {{!isInformationShown ? 'vfmp-card-ui__content-bottom--hide' : ''}}" style={{secondContentStyle}}>
+                    {{isInformationShown ? secondContent : secondTitle ? '**/**' : ''}}
+        </view>
+      </view>
+      <view class="vfmp-card-ui__bottom-row__middle" style={{thirdWrapperStyle}}>
+        <view class="vfmp-card-ui__content-bottom--title" style={{thirdTitleStyle}}>
+                    {{thirdTitle}}
+        </view>
+        <view class="vfmp-card-ui__content-bottom {{!isInformationShown ? 'vfmp-card-ui__content-bottom--hide' : ''}}" style={{thirdContentStyle}}>
+                    {{isInformationShown ? thirdContent : thirdTitle ? '***' : ''}}
+        </view>
+      </view>
+      <view class="vfmp-card-ui__bottom-row__right" id={{componentID + '-icon'}} aria-label={{componentID && componentID + '-icon'}} style={{extraIllustrationStyle}}
+                >
+        <view fallback={{null}}>
+          <illustration illustrationName={{illustrationName}} height={{illustrationHeight}} width={{illustrationWidth}} illustrationclass={{extraIllustrationclass}} />
+        </view>
+      </view>
+    </view>
+  </view>
+  <view a:else>
+    
+  </view>
+</view>

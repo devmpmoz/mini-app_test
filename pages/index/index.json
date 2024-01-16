@@ -1,0 +1,28 @@
+{
+  "pullRefresh": true,
+  "usingComponents": {
+    "card": "/components/Card/Card",
+    "list-row": "/components/ListRow2/ListRow2",
+    "information-card": "/components/InformationCard/InformationCard",
+    "list": "antd-mini/es/List/index",
+    "list-item": "antd-mini/es/List/ListItem/index",
+    "icon": "/components/Icon/Icon",
+    "m-nav": "/components/NavBar/NavBar",
+    "m-cell": "/components/mpesa/m-cell/m-cell",
+    "m-cell-action": "/components/mpesa/m-cell-action/m-cell-action",
+    "m-cell-content": "/components/mpesa/m-cell-content/m-cell-content",
+    "m-cell-desc": "/components/mpesa/m-cell-desc/m-cell-desc",
+    "m-cell-icon": "/components/mpesa/m-cell-icon/m-cell-icon",
+    "m-cell-label": "/components/mpesa/m-cell-label/m-cell-label",
+    "m-divider": "/components/mpesa/m-divider/m-divider",
+    "m-icon": "/components/mpesa/m-icon/m-icon",
+    "carousel-item": "/components/favourites-carousel-item/favourites-carousel-item",
+    "m-shimmer": "/components/mpesa/m-shimmer/m-shimmer",
+    "payment-tile": "/components/PaymentHistoryTile/PaymentHistoryTile",
+    "sectioned-list": "/components/SectionedList/SectionedList",
+    "card-item": "/components/CardItem/CardItem",
+    "toast": "/components/Toast/Toast",
+    "icon-button": "/components/IconButton/IconButton",
+    "m-button": "/components/mpesa/m-btn/m-btn"
+  }
+}

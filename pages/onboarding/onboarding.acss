@@ -1,0 +1,23 @@
+.nav-bar {
+  background: white;
+  color: #333333;
+}
+
+.container {
+  background-color: white;
+}
+
+.tutorial-container {
+  display: flex;
+  flex-grow: 1;
+  padding: 32rpx;
+}
+
+.tutorial-step-description {
+  display: inline-block;
+  white-space: pre-wrap;
+}
+
+.tutorial-step-description .bold {
+  font-weight: 700;
+}

@@ -1,0 +1,65 @@
+<view class="mb-16" a:if="{{ sections.length || isLoading }}">
+  <list>
+    <block a:if="{{ isLoading }}">
+      <view
+        class="mx-16 mb-16 mt-16"
+        style="display: flex; flex-direction: row; min-height: 20px;"
+        slot="header"
+      ></view>
+      <block>
+        <section-tile>
+          <m-shimmer slot="trailing-title" style="height: 14px; width: 80px;" />
+          <m-shimmer
+            slot="trailing-description"
+            class="mt-6"
+            style="height: 14px; width: 110px;"
+          />
+          <m-shimmer slot="leading-title" style="height: 14px; width: 120px;" />
+          <m-shimmer
+            slot="leading-description"
+            class="mt-6"
+            style="height: 14px; width: 80px;"
+          />
+        </section-tile>
+        <m-divider/>
+      </block>
+    </block>
+    <block a:else>
+      <block
+        a:for="{{ sections }}"
+        a:for-index="id"
+        a:for-item="section"
+      >
+        <view
+          class="mx-16 mb-16 mt-16"
+          style="display: flex; flex-direction: row; min-height: 20px;"
+          slot="header"
+        >
+          <view class="m-title mr-4">{{ section.title }}</view>
+          <text a:if="{{ section.showSectionButton }}" class="section-button" onTap="onSectionButtonClick" data-value="{{ id }}">{{ section.sectionButtonLabel || 'See all' }}</text>
+        </view>
+        <block a:for="{{ section.data }}" a:for-index="id_row" a:for-item="data">
+          <section-tile class="row-card" onTap="onRowClick" value="{{ id }}_{{ id_row }}" >
+            <view slot="trailing-title" class="m-body left-title" a:if="{{ data.leftTitle }}">
+              {{ data.leftTitle || '' }}
+            </view>
+            <view slot="trailing-description" class="left-description" a:if="{{ data.leftDescription }}">
+              {{ data.leftDescription || '' }}
+            </view>
+            <view slot="leading-title" class="m-title right-title" a:if="{{ data.rightTitle }}">
+              {{ data.rightTitle || '' }}
+            </view>
+            <view slot="leading-description" class="m-body mt-6 caption right-description" a:if="{{ data.rightDescription }}">
+              {{ data.rightDescription || '' }}
+            </view>
+          </section-tile>
+          <m-divider/>
+        </block>
+      </block>
+    </block>
+  </list>
+</view>
+<view a:else class="list-empty">
+  <image style="height: 192rpx" src="{{ emptyIcon }}" />
+  <text class="empty-title">{{ emptyTitle }}</text>
+</view>

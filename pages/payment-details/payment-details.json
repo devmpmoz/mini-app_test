@@ -1,0 +1,9 @@
+{
+  "pullRefresh": false,
+  "usingComponents": {
+    "m-nav": "/components/NavBar/NavBar",
+    "labeled-list-row": "/components/LabeledListRow/LabeledListRow",
+    "icon-button": "/components/IconButton/IconButton",
+    "m-button": "/components/mpesa/m-btn/m-btn"
+  }
+}

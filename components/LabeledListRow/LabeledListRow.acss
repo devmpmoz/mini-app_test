@@ -1,0 +1,87 @@
+@font-face {
+  font-family: VodafoneRg-Regular;
+  src: url('/assets/fonts/VodafoneRg.ttf');
+}
+@font-face {
+  font-family: VodafoneRg-Bold;
+  src: url('/assets/fonts/VodafoneRgBd.ttf');
+}
+@font-face {
+  font-family: VodafoneLt;
+  src: url('/assets/fonts/VodafoneLt.ttf');
+}
+
+ .vfmp-labeled-list-row__container {
+	 border-bottom: 1px solid #ebebeb;
+	 padding-bottom: 10px;
+	 padding-top: 10px;
+}
+ .vfmp-labeled-list-row__container--detailed {
+	 padding: 10px 16px 10px 16px;
+	 background-color: #fff;
+}
+ .vfmp-labeled-list-row__container--detailed .vfmp-labeled-list-row__label {
+	 font-size: 16px;
+	 line-height: 18px;
+	 color: #ebebeb;
+	 display: flex;
+	 flex-direction: column;
+}
+ .vfmp-labeled-list-row__container--detailed .vfmp-labeled-list-row__label__description {
+	 color: #007e95;
+	 padding-top: 6px;
+}
+ .vfmp-labeled-list-row__container--detailed .vfmp-labeled-list-row__value-span {
+	 font-size: 16px;
+	 color: #ebebeb;
+	 line-height: 19px;
+	 font-family: VodafoneRg-Bold;
+	 padding-top: 4px;
+}
+ .vfmp-labeled-list-row__container--detailed .vfmp-labeled-list-row__value-description {
+	 font-size: 16px;
+	 line-height: 18px;
+	 color: #999;
+}
+ .vfmp-labeled-list-row__wrapper {
+	 display: flex;
+	 align-items: center;
+	 justify-content: space-between;
+}
+ .vfmp-labeled-list-row__label {
+	 font-family: VodafoneRg-Regular;
+	 font-size: 16px;
+	 color: #333;
+}
+ .vfmp-labeled-list-row__value {
+	 display: flex;
+	 flex-direction: column;
+	 font-family: VodafoneRg-Bold;
+	 font-size: 16px;
+	 color: #333;
+	 text-align: right;
+	 padding-left: 10px;
+}
+ .vfmp-labeled-list-row__value--big {
+	 font-size: 20px;
+}
+ .vfmp-labeled-list-row__value-description {
+	 font-family: VodafoneRg-Regular;
+	 font-size: 14px;
+	 line-height: 18px;
+	 margin-bottom: 4px;
+}
+ .vfmp-labeled-list-row__extraValues {
+	 padding-top: 10px;
+	 font-family: VodafoneRg-Regular;
+	 font-size: 14px;
+	 color: #666;
+}
+ .vfmp-labeled-list-row__extraValues_label {
+	 font-family: VodafoneRg-Bold;
+}
+ .vfmp-labeled-list-row__container_line{
+border-bottom: 1px solid #ebebeb;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}

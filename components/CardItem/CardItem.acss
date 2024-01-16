@@ -1,0 +1,112 @@
+@font-face {
+  font-family: VodafoneRg-Regular;
+  src: url('/assets/fonts/VodafoneRg.ttf');
+}
+@font-face {
+  font-family: VodafoneRg-Bold;
+  src: url('/assets/fonts/VodafoneRgBd.ttf');
+}
+@font-face {
+  font-family: VodafoneLt;
+  src: url('/assets/fonts/VodafoneLt.ttf');
+}
+
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  width: calc(100vw - 30px);
+  height: auto;
+  margin-right: 16rpx;
+  background-color: #ffffff;
+  border-radius: 15rpx;
+  box-shadow: 0 8rpx 16rpx 0 rgba(0, 0, 0, 0.2);
+}
+
+.carousel-item-small {
+  height: auto;
+}
+
+.badge {
+  padding: 12rpx 24rpx;
+  border-radius: 40rpx;
+  background-color: #e60000;
+}
+
+.top-row{
+  background: #f4f4f4;
+  border-radius: 15rpx 15rpx 0rpx 0rpx;
+}
+
+.top-row-single {
+  flex: 1;
+  border-radius: 15rpx;
+}
+
+.top-row-wrapper {
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.top-title {
+  font-family: VodafoneRg-Regular;
+  font-size: 36rpx;
+  font-weight: 400;
+  line-height: 40rpx;
+  color: #333333;
+  margin-bottom: 4rpx;
+}
+
+.top-description {
+  font-family: VodafoneRg-Regular;
+  font-size: 24rpx;
+  font-weight: 400;
+  line-height: 36rpx;
+  color: #999999;
+}
+
+.bottom-row {
+  border-radius: 0rpx 0rpx 15rpx 15rpx;
+}
+
+.bottom-text {
+  font-family: VodafoneRg-Regular;
+  font-size: 56rpx;
+  font-weight: 400;
+  line-height: 64rpx;
+  color: #333333;
+}
+
+.text-overflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.multi-line {
+  white-space: normal;
+  line-break: auto;
+}
+
+.fit-content {
+  min-width: fit-content;
+}
+
+.max-width-120{
+  max-width: 240rpx;
+}
+
+.p-16 {
+  padding: 32rpx;
+}
+
+.mt-6 {
+  margin-top: 12px;
+}
+
+.ml-16 {
+  margin-left: 32rpx;
+}
+
+.body-14 {
+  font-size: 28rpx;
+}

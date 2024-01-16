@@ -1,0 +1,11 @@
+<button id={{componentID}} aria-label={{componentID}} class="vfmp__primary-button {{styling}}" style="{{restOfStyles}}" type={{type}} disabled={{buttonDisabled}}>
+  <view class='content'>
+    <view class='icon-left' a:if="{{ iconPosition == 'left'}}">
+      <icon iconName={{iconName}} height="20" width="20"></icon>
+    </view>
+        {{buttonContent}}
+    <view class='icon-right' a:if="{{ iconPosition == 'right'}}">
+      <icon iconName={{iconName}} height="20" width="20"></icon>
+    </view>
+  </view>
+</button>

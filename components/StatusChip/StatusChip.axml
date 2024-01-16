@@ -1,0 +1,15 @@
+ <view
+      id={{componentID}}
+      aria-label={{componentID}}
+      class="vfmp-status-chip--{{stausChipType != '' ? stausChipType : 'info'}}"
+      style="
+        {{contentExtraStyle}},
+        backgroundColor: {{color}},
+        borderColor: {{borderColor}},
+        color: {{fontColor}},
+        fontSize: {{fontSize}},
+        lineHeight: {{fontSize}}
+      "
+    >
+      <view style={{spanExtraStyle}}>{{label}}</view>
+    </view>

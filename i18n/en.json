@@ -1,0 +1,255 @@
+{
+  "appName": "Credelec",
+  "languageCode": "en",
+  "home": {
+    "appBarTitle": "Credelec",
+    "makeNewPayment": "Make new payment",
+    "emptyPayments": "No payments to show",
+    "favouriteMetersTitle": "Your favourite meters",
+    "recharge": "Recharge",
+    "favouriteLastPayment": "Last payment",
+    "paymentLastPayment": "Previous payments",
+    "viewMorePayment": "View more previous payment",
+    "favourites": {
+      "editFavourites": "Edit favorites",
+      "favouritesEmptyTitle": "No favourites yet?",
+      "favouritesEmptyDescription": "Save time and pay your bills swiftly and hassle-free. Let's get started by adding your first favourite meter!",
+      "favouritesEmptyButton": "Start now"
+    }
+  },
+  "makePayment": {
+    "appBarTitle": "Make payment",
+    "meterName": "Meter name",
+    "meterNumber": "Meter number",
+    "amount": "Amount",
+    "currentBalance": "Current balance",
+    "continueBtn": "Continue",
+    "rechargeBtn": "Recharge",
+    "makePaymentLoading": "Your payment is being processed",
+    "preValidationLoading": "Please wait a moment"
+  },
+  "confirmPayment": {
+    "appBarTitle": "Check & confirm",
+    "to": "To",
+    "meterName": "Meter name",
+    "meterNumber": "Meter number",
+    "total": "Total",
+    "primaryBtn": "Pay",
+    "fee": "Fee"
+  },
+  "paymentResult": {
+    "appBarTitle": "Payment confirmed",
+    "successTitle": "Recharge sent successfully",
+    "voucher": "Recharge",
+    "meterNo": "Meter number",
+    "meterName": "Meter name",
+    "units": "Units",
+    "tipLabel": "You can retrieve your receipt or \"Continue\" to save your meter number",
+    "viewVoucherBtn": "Check recharge",
+    "primaryBtn": "Done",
+    "addFavouriteBtn": "Add favourite",
+    "copiedSuccess": "Copied to clipboard",
+    "copiedError": "Error copying"
+  },
+  "paymentDetails": {
+    "appBarTitle": "Details",
+    "meterName": "Meter name",
+    "meterNumber": "Meter number",
+    "voucher": "Token",
+    "txTax": "Fee",
+    "date": "Date and hour",
+    "total": "Total",
+    "txFees": "Transaction fees",
+    "download": "Download receipt",
+    "primaryBtn": "Back",
+    "primaryBtnRepay": "Pay again"
+  },
+  "saveMeter": {
+    "appBarTitle": "Save Meter",
+    "voucherNotRetrievedTitle": "Your Credelec Payment of 350 MT is Underway",
+    "voucherNotRetrievedSubtitle": "\"You will receive an SMS notification shortly with your Voucher\"",
+    "meterNameFld": "Enter meter name",
+    "primaryBtn": "Save Meter",
+    "secondaryBtn": "Cancel"
+  },
+  "favourites": {
+    "appBarTitle": "Favourites",
+    "addFavouriteLbl": "Add favourite",
+    "listTitle": "Favourites",
+    "bottomSheetTitle": "Select one option",
+    "editFavourite": "Edit favourite",
+    "deleteFavourite": "Remove favourite",
+    "favouriteRemoveSuccess": "Favourite successfully removed",
+    "favouriteRemoveError": "We appear to be having trouble removing your favourite meter. Please try again.",
+    "removeFavouriteLoading": "Deleting favourite, please wait",
+    "emptyTitle": "You have no favourites yet"
+  },
+  "addFavourite": {
+    "appBarTitle": "Add favourite",
+    "meterNameFld": "Meter name",
+    "meterNumberFld": "Meter Number",
+    "primaryBtn": "Add",
+    "favouriteAddSuccess": "Favourite successfully added",
+    "favouriteAddError": "We appear to be having trouble adding your new favourite meter. Please try again.",
+    "addFavouriteLoading": "Adding favourite, please wait",
+    "selectFavouriteLabel": "Para adicionar um número de contador como favorito, por favor atribua um nome ao contador."
+  },
+  "editFavourite": {
+    "appBarTitle": "Edit favourite",
+    "meterNameFld": "Meter name",
+    "meterNumberFld": "Meter number",
+    "primaryBtn": "Save changes",
+    "favouriteEditSuccess": "Favourite successfully updated",
+    "favouriteEditError": "We appear to be having trouble updating your favourite meter. Please try again.",
+    "editFavouriteLoading": "Updating favourite, please wait"
+  },
+  "replaceFavourite": {
+    "appBarTitle": "Replace favourite",
+    "warningLbl": "Choose the meter you want to delete. By replacing a favourite, you will lose the details of the eliminated meter",
+    "listTitle": "Favoritos",
+    "favouriteReplaceSuccess": "Favourite successfully replaced",
+    "favouriteReplaceError": "We appear to be having trouble replacing your favourite meter. Please try again.",
+    "replaceFavouriteLoading": "Replacing favourite, please wait"
+  },
+  "favouriteAdded": {
+    "appBarTitle": "Favourite added",
+    "successLbl": "You have successfully added your new favourite meter",
+    "primaryBtnLbl": "Done"
+  },
+  "paymentsHistory": {
+    "appBarTitle": "Credelec",
+    "unknownMeter": "Other meter",
+    "toastError": "We appear to be having trouble getting your payments. Please try again."
+  },
+  "onboarding": {
+    "step1": {
+      "title": "What is Credelec?",
+      "description": "Credelec is an M-Pesa services that helps you to quickly, easily and conveniently purchase your electricity units",
+      "button": "Start now"
+    },
+    "step2": {
+      "title": "What do I need to buy Credelec?",
+      "descriptionPart1": "You just need to:\n1. Have your electricity&nbsp;",
+      "descriptionPart2_bold": "meter number",
+      "descriptionPart3": "&nbsp;with you\n2. Have a&nbsp;",
+      "descriptionPart4_bold": "minimum of 10MTs",
+      "descriptionPart5": "&nbsp;in your M-Pesa account",
+      "button": "Continue"
+    }
+  },
+  "alerts": {
+    "confirmFavouriteDelete": {
+      "title": "Remove favourite meter",
+      "body1": "You will be removing this favourite from the list. Would you like to continue?",
+      "primaryBtn": "Remove favourite",
+      "secondaryBtn": "Cancel"
+    },
+    "favouriteLimit": {
+      "title": "Favourite limit reached",
+      "body1": "You already have 5 favourite meters. If you want to save this new meter you need to remove an existing one",
+      "primaryBtn": "Replace favourite",
+      "secondaryBtn": "Cancel"
+    },
+    "replaceLimit": {
+      "title": "Replace favourite meter",
+      "body1": "By selecting {{old_name}} you will delete this favourite meter to add {{new_name}} as a new favourite. Do you want do continue?",
+      "primaryBtn": "Replace favourite",
+      "secondaryBtn": "Cancel"
+    }
+  },
+  "error": {
+    "invalidMeterName": "Invalid meter name",
+    "invalidMeterNumber": "Invalid meter number",
+    "incompleteMeterNumber": "Meter number must have 11 digits",
+    "invalidAmount": "Invalid amount",
+    "minimumAmount": "Minimum amount: ",
+    "maximumAmount": "Maximum amount: ",
+    "meterNameAlreadyExist": "Meter name already exists",
+    "meterNoAlreadyExist": "Meter number already exists"
+  },
+  "loading": {
+    "": ""
+  },
+  "common": {
+    "meter": "Meter",
+    "btnRetry": "Retry",
+    "btnCancel": "Cancel",
+    "genericErrorToast": "We appear to be having trouble getting your details. Please try again.",
+    "unavailable": "Unavailable"
+  },
+  "receipt": {
+    "title": "Transaction details",
+    "service": "Service",
+    "meterNumber": "Meter Nº",
+    "token": "Token",
+    "energyCost": "Energy Cost",
+    "vat": "VAT",
+    "paidDebt": "Paid debt",
+    "amountDebt": "Amount of debt",
+    "taxGarbage": "Tax Garbage",
+    "taxRadio": "Tax Radio",
+    "totalPayment": "Payment Total",
+    "energyUnits": "Energy Unit",
+    "reference": "Reference",
+    "dateTime": "Date and time",
+    "unavailable": "Unavailable",
+    "credelec": "EDM Credelec",
+    "appBarTitle": "Receipt",
+    "download": "Save and share receipt",
+    "unableToDownload": "At this time is not possible to retrieve your receipt. Try again"
+  },
+  "errorCodes": {
+    "AMOUNT_TOO_LOW": {
+      "title": "Sorry, something went wrong",
+      "description": "We can't complete your request now, please try again later.",
+      "primaryButton": "Retry",
+      "secondaryButton": "Cancel"
+    },
+    "AMOUNT_TOO_HIGH": {
+      "title": "Sorry, something went wrong",
+      "description": "We can't complete your request now, please try again later.",
+      "primaryButton": "Retry",
+      "secondaryButton": "Cancel"
+    },
+    "LIMIT_EXCEEDED": {
+      "title": "Sorry, something went wrong",
+      "description": "We can't complete your request now, please try again later.",
+      "primaryButton": "Cancel"
+    },
+    "INSUFFICIENT_BALANCE": {
+      "title": "Insufficient balance",
+      "description": "It seems you don't have enough balance to make this payment, please top up your M-Pesa account and try again later",
+      "primaryButton": "Go back to dashboard"
+    },
+    "INVALID_RECEIVER": {
+      "title": "Sorry, something went wrong",
+      "description": "We can't complete your request now, please try again later.",
+      "primaryButton": "Retry",
+      "secondaryButton": "Cancel"
+    },
+    "INVALID_PARAMETERS": {
+      "title": "Sorry, something went wrong",
+      "description": "We can't complete your request now, please try again later.",
+      "primaryButton": "Retry",
+      "secondaryButton": "Cancel"
+    },
+    "WRONG_PIN": {
+      "title": "Sorry, something went wrong",
+      "description": "We can't complete your request now, please try again later.",
+      "primaryButton": "Retry",
+      "secondaryButton": "Cancel"
+    },
+    "SERVICE_UNAVAILABLE": {
+      "title": "Sorry, something went wrong",
+      "description": "We can't complete your request now, please try again later.",
+      "primaryButton": "Retry",
+      "secondaryButton": "Cancel"
+    },
+    "UNKNOWN": {
+      "title": "Sorry, something went wrong",
+      "description": "We can't complete your request now, please try again later.",
+      "primaryButton": "Retry",
+      "secondaryButton": "Cancel"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "pullRefresh": false,
+  "usingComponents": {
+    "container": "antd-mini/es/Container/index",
+    "m-nav": "/components/NavBar/NavBar",
+    "tutorial": "/components/Tutorial/Tutorial",
+    "tutorial-step": "/components/TutorialStep/TutorialStep"
+  }
+}

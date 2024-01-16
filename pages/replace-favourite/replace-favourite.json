@@ -1,0 +1,11 @@
+{
+  "pullRefresh": false,
+  "usingComponents": {
+    "m-nav": "/components/NavBar/NavBar",
+    "list": "antd-mini/es/List/index",
+    "list-row": "/components/ListRow2/ListRow2",
+    "m-divider": "/components/mpesa/m-divider/m-divider",
+    "m-alert-modal": "/components/mpesa/m-alert-modal/m-alert-modal",
+    "m-button": "/components/mpesa/m-btn/m-btn"
+  }
+}

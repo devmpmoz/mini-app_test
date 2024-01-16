@@ -1,0 +1,38 @@
+.m-overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  z-index: 100;
+}
+
+.m-overlay--shade {
+  background-color: rgba(0, 0, 0, 0.48);
+  /*-- @alpha-48 --*/
+}
+
+.m-overlay--blur {
+  background-color: rgba(0, 0, 0, 0.48);
+  /*-- @alpha-48 --*/
+}
+
+.m-overlay--blur .background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  background-color: rgba(0, 0, 0, 0.48);
+  /*-- @alpha-48 --*/
+  filter: blur(8px);
+  z-index: 101;
+}
+
+.m-overlay--white {
+  background-color: rgba(255, 255, 255, .6);
+}

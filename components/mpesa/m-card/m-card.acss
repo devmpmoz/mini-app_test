@@ -1,0 +1,16 @@
+.m-card {
+  background-color: white;
+  display: block;
+  max-width: 100%;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition-property: background, opacity;
+  transition-property: background, opacity;
+  overflow-wrap: break-word;
+  position: relative;
+  white-space: normal;
+  -webkit-transition: background 280ms ease;
+  transition: background 280ms ease;
+  will-change: background;
+  border-radius: 8px;
+}

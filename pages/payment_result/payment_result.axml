@@ -1,0 +1,73 @@
+<import-sjs from="/utils/formatNumber.sjs" name="numberFormat" />
+
+<view class="container">
+  <m-nav size="small" title="{{ i18n.paymentResult.appBarTitle }}" />
+
+  <view class="body">
+    <view class="card">
+      <view class="content m-flex m-align-center">
+        <view class="my-auto">
+          <image class="" style="height: 200rpx;" src="/assets/icons/hi_tick_outline.svg" />
+        </view>
+        <view class="confirm-title">
+          <text a:if="{{ i18n.paymentResult.successTitle.split('{{value}}')[0] }}">
+            {{ i18n.paymentResult.successTitle.split("{{value}}")[0] }}
+          </text>
+          <text a:if="{{ amount }}" style="font-weight: 700;">
+             {{ numberFormat.currency(amount, 2, i18n.common.unavailable)}}
+          </text>
+          <text a:if="{{ i18n.paymentResult.successTitle.split('{{value}}')[1] }}">
+            {{ i18n.paymentResult.successTitle.split('{{value}}')[1] }}
+          </text>
+        </view>
+
+        <view class="confirm-description">{{ i18n.paymentResult.successDescription }}</view>
+        <block a:if="{{ voucher.formattedToken }}">
+          <view class="mt-24" />
+          <view class="copy-chip">
+            <copy-chip value="{{voucher.formattedToken}}" onCopySuccess="textCopied" onCopyError="textNotCopied"/>
+          </view>
+        </block>
+        
+        <view class="mt-24" />
+        <view a:if="{{ meterNo }}" class="confirm-parameters"><text style="font-weight: 700;" decode="&nbsp;">{{ i18n.paymentResult.meterNo}}:&nbsp;</text>{{ meterNo }}</view>
+        <view a:if="{{ meterName }}" class="confirm-parameters"><text style="font-weight: 700;" decode="&nbsp;">{{ i18n.paymentResult.meterName }}:&nbsp;</text> {{ meterName }}</view>
+        <view a:if="{{ voucher.energyUnit }}" class="confirm-parameters"><text style="font-weight: 700;" decode="&nbsp;">{{ i18n.paymentResult.units }}:&nbsp;</text> {{ voucher.energyUnit }}</view>
+        <view class="my-auto" />
+        <view class="action-buttons-container">
+          <icon-button
+            isVertical="{{true}}"
+            label="{{ i18n.paymentDetails.download }}"
+            iconName="si_download.svg"
+            width="18"
+            height="18"
+            onButtonClick="handleDownloadReceipt"
+            iconExtraStyle="margin-top: 4rpx"
+          ></icon-button>
+        </view>
+      </view>
+
+      <view class="bottom-buttons">
+        <m-button a:if="{{ !meterNoExists }}"  onTap="onContinue">
+          {{ i18n.paymentResult.addFavouriteBtn }}
+        </m-button>
+        <m-button type="{{ !meterNoExists ? 'secondary' : 'primary' }}" class="mt-16" onTap="onFinishFlow">
+          {{ i18n.paymentResult.primaryBtn }}
+        </m-button>
+      </view>
+    </view>
+  </view>
+</view>
+
+<toast
+  content="{{toastContent}}" 
+  duration="{{3000}}" 
+  showMask="{{false}}" 
+  visible="{{showToast}}"
+  onClose="onToastClose" 
+  data-index="1"
+  type="{{toastType}}"
+  wrapperExtraStyle="background: #cccccc; width: fit-content; border-radius: 84rpx; border: none;"
+  iconRightWrapperExtraStyle="display: none;"
+  textExtraStyle="color: #333333;"
+/>

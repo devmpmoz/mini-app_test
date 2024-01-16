@@ -1,0 +1,9 @@
+<view class='step_container'>
+  <view class='vfmp-tutorial-step__image' style="background-image: url('{{ imagePath }}');" />
+  <view class='vfmp-tutorial-step__title'>
+    <slot name="title"/>
+  </view>
+  <view class='vfmp-tutorial-step__description'>
+    <slot name="description"/>
+  </view>
+</view>

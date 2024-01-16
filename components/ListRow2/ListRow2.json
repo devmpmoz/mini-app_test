@@ -1,0 +1,13 @@
+{
+  "component": true,
+  "usingComponents": {
+    "m-cell": "../mpesa/m-cell/m-cell",
+    "m-cell-action": "../mpesa/m-cell-action/m-cell-action",
+    "m-cell-content": "../mpesa/m-cell-content/m-cell-content",
+    "m-cell-desc": "../mpesa/m-cell-desc/m-cell-desc",
+    "m-cell-icon": "../mpesa/m-cell-icon/m-cell-icon",
+    "m-cell-label": "../mpesa/m-cell-label/m-cell-label",
+    "m-divider": "../mpesa/m-divider/m-divider",
+    "m-icon": "../mpesa/m-icon/m-icon"
+  }
+}

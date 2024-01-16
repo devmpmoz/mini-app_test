@@ -1,0 +1,20 @@
+{
+  "pullRefresh": false,
+  "usingComponents": {
+    "white-space": "../../components/WhiteSpace/index",
+    "list": "antd-mini/es/List/index",
+    "list-item": "antd-mini/es/List/ListItem/index",
+    "m-sheet": "../../components/mpesa/m-sheet/m-sheet",
+    "m-card": "../../components/mpesa/m-card/m-card",
+    "m-card-content": "../../components/mpesa/m-card-content/m-card-content",
+    "m-card-actions": "../../components/mpesa/m-card-actions/m-card-actions",
+    "m-nav": "/components/NavBar/NavBar",
+    "m-divider": "/components/mpesa/m-divider/m-divider",
+    "list-row": "/components/ListRow2/ListRow2",
+    "m-alert-modal": "/components/mpesa/m-alert-modal/m-alert-modal",
+    "toast": "/components/Toast/Toast",
+    "card": "/components/Card/Card",
+    "image-button": "/components/ImageButton/ImageButton",
+    "m-button": "/components/mpesa/m-btn/m-btn"
+  }
+}

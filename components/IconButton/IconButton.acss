@@ -1,0 +1,51 @@
+.image-container {
+  border: 2rpx solid;
+  border-radius: 12rpx;
+  padding: 28rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.text-container {
+  padding: 10rpx 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 26rpx;
+  line-height: 32rpx;
+  color: #333;
+  font-family: VodafoneRg-Regular;
+}
+
+.loading-container {
+  display: flex; 
+  align-items: center
+}
+
+.image-container-horizontal {
+  border: 2rpx solid;
+  border-radius: 50rpx;
+  padding: 8rpx 32rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.horizontal-text {
+  text-align: center;
+  font-size: 26rpx;
+  line-height: 32rpx;
+  color: #333;
+  font-weight: bold;
+}
+
+.loading-container-horizontal {
+  display: flex; 
+  align-items: center;
+  margin-right: 15rpx
+}

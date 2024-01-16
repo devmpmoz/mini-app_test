@@ -1,0 +1,27 @@
+<view id={{componentID}} aria-label={{componentID}} class="vfmp-summary-card__container {{theme === 'white' ? 'vfmp-summary-card__container_white' : ''}}">
+  <view class="vfmp-summary-card__header">
+    <view class="vfmp-summary-card__header_title">{{title}}</view>
+    <view class="vfmp-summary-card__header_value">{{value}}</view>
+  </view>
+
+  <view class="vfmp-summary-card__sections" a:for="{{sections}}">
+    <view class="vfmp-summary-card__section" key={{index}}>
+      <view class="vfmp-summary-card__section_title">{{item.title}}</view>
+      <view class="vfmp-summary-card__section_value">{{item.value}}</view>
+    </view>
+  </view>
+
+  <view class="vfmp-summary-card__footer">
+    <view class="vfmp-summary-card__footer__text">{{footer}}</view>
+    <view a:if="{{footerButton}}">
+      <view fallback={null} a:if="{{footerButtonIsLoading}}">
+        <icon height="22" iconName='loader' color="{{theme === 'white' ? '#666666' : '#fff'}}" />
+      </view>
+      <view>
+        <button id={{componentID + '-button'}} aria-label={{componentID + '-button'}} class="vfmp-summary-card__footer__button" disabled={{footerButtonState}} onTap="onTapFooterButton">
+              {{footerButtonLabel}}
+        </button>
+      </view>
+    </view>
+  </view>
+</view>

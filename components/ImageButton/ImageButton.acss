@@ -1,0 +1,38 @@
+.image-button {
+  display:flex;
+  max-width: 100%;
+  background-color: white;
+  outline: none;
+  text-decoration: none;
+  overflow-wrap: break-word;
+  white-space: normal;
+  border-radius: 12rpx;
+  box-shadow: 0 8rpx 16rpx 0 rgba(0, 0, 0, 0.2);
+  margin: 32rpx;
+}
+
+.image-button-background {
+  background-color: #EB9700;
+  background-image: url('/assets/illustrations/star.svg');
+  background-repeat: no-repeat;
+  background-position: center right 31px;
+  background-size: contain;
+}
+
+.image-button-content {
+  display:flex;
+  padding: 32rpx;
+}
+
+.image-button-label {
+  font-family: VodafoneRg-Regular;
+  font-weight: 700;
+  font-size: 32rpx;
+  line-height: 36rpx;
+  color: #000000;
+  margin: auto auto auto 0;
+}
+
+.image-button-label-image {
+  color: #ffffff
+}

@@ -1,0 +1,29 @@
+
+ .vfmp-toggle__container {
+	 border: 1px solid rgba(255, 255, 255, 0.6);
+	 border-radius: 100px;
+	 height: 24px;
+	 width: 40px;
+	 position: relative;
+}
+ .vfmp-toggle__indicator {
+	 height: 22px;
+	 width: 22px;
+	 border-radius: 50%;
+	 background: #fff;
+	 box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+	 position: absolute;
+	 top: 1px;
+	 left: 0;
+	 transition: transform 0.1s ease-in-out;
+}
+ .vfmp-toggle__indicator--on {
+	 transform: translateX(18px);
+}
+ .vfmp-toggle__indicator--disabled {
+	 background: #ccc;
+}
+ .vfmp-toggle__input {
+	 display: none;
+}
+ 

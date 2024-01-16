@@ -1,0 +1,52 @@
+<import-sjs from="/utils/formatNumber.sjs" name="numberFormat" />
+
+<view class="container">
+  <m-nav size="small" title="{{ i18n.makePayment.appBarTitle }}" />
+
+  <view class="body">
+    <view class="card">
+      <view class="content">
+        <view class="mb-8">
+          <input-mpesa
+            field="meterNo"
+            type="number"
+            label="{{ meterName ? meterName : i18n.makePayment.meterNumber }}"
+            description="{{ meterNo.length + '/11' }}"
+            value="{{ meterNo }}"
+            onInput="handleInputChange"
+            onValidation="meterNoValidator"
+            hasButton="true"
+            buttonIconName="{{meterWasFavourite ? 'si_star_full.svg' : 'si_star.svg'}}"
+            onIconButtonClick="onSelectFavourite"
+            inputDisabled="{{!isNewMeter}}"
+          />
+        </view>
+        <view class="mb-12">
+          <input-mpesa
+            field="amount"
+            type="amount"
+            label="{{ i18n.makePayment.amount }}"
+            value="{{ amount }}"
+            onInput="handleInputChange"
+            onValidation="amountValidator"
+            errorMsg="{{amountErrorMsg}}"
+            hasSuggestions="{{true}}"
+            suggestionItems="{{amountOptions}}"
+            onSuggestionClick="onSelectAmount"
+            suggestionSymbol="MT"
+          />
+        </view>
+      </view>
+
+      <view class="action-section p-16">
+        <m-button
+          onTap="onContinue"
+          disabled="{{ !isMeterNoValid || !isAmountValid }}"
+          loading="{{isLoading}}"
+        >
+          {{ i18n.makePayment.continueBtn }}
+        </m-button>
+      </view>
+    </view>
+  </view>
+</view>

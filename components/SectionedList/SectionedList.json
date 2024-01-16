@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "list": "antd-mini/es/List/index",
+    "section-tile": "../PaymentHistoryTile/PaymentHistoryTile",
+    "m-divider": "../mpesa/m-divider/m-divider",
+    "m-shimmer": "../mpesa/m-shimmer/m-shimmer"
+  }
+}

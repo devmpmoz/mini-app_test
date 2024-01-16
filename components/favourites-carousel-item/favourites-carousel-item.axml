@@ -1,0 +1,19 @@
+<view class="carousel-item p-16" onTap="onTap" data-value="{{value}}">
+  
+  <view class="m-flex">
+    <view class="m-flex m-flex-column" style="flex-grow: 1;">
+      <m-shimmer a:if="{{ isLoading }}" style="height: 16px; width: 90%;" />
+      <view a:else class="m-title body-16">{{ title }}</view>
+      <m-shimmer a:if="{{ isLoading }}" class="mt-6" style="height: 12px; width: 130px;" />
+      <view a:else class="m-caption caption-12">{{ subtitle }}</view>
+    </view>
+    <view class="m-flex m-justify-end m-align-center">
+      <m-shimmer a:if="{{ isLoading }}" class="mt-6" style="height: 26px; width: 80px; border-radius: 20px;" />
+      <view a:else class="badge m-body body-14 inverted">{{ badgeText }}</view>
+    </view>
+  </view>
+  <view class="my-auto" />
+  <m-shimmer a:if="{{ isLoading }}" style="height: 30px; width: 100%;" />
+  <view a:else class="m-body title-30">{{ name }}</view>
+  
+</view>

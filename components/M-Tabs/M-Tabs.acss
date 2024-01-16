@@ -1,0 +1,88 @@
+ .am-tabs-tab-bar-wrap{
+  width:100%
+}
+.am-tabs-bar{
+  background:#fff;
+  width:100%;
+  overflow:hidden;
+  height:84rpx;
+  display:flex;
+}
+.am-tabs-plus-wrap{
+  display:none;
+  position:relative;
+  width:48rpx;
+  height:86rpx
+}
+.am-tabs-plus-wrap.show{
+  display:block
+}
+.am-tabs-plus{
+  position:absolute;
+  z-index:100;
+  top:8rpx;
+  left:0;
+  transform:translateX(-50%);
+  width:64rpx;
+  height:64rpx;
+  background-image:url(https://gw.alipayobjects.com/zos/rmsportal/DObPgppwxyNHeejHANtu.png);
+  background-size:32rpx 32rpx;
+  background-position:center;
+  background-repeat:no-repeat
+}
+.am-tabs-bar-content-wrap{
+  position:relative;
+  flex:1
+}
+.am-tabs-bar-content{
+  width:100%;
+  height:100rpx;
+  overflow-x:auto;
+  overflow-y:hidden;
+  display:flex;
+  flex-direction:row
+}
+.am-tabs-bar-tab{
+  height:84rpx;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:25%;
+  flex-shrink:0;
+  font-size:32rpx;
+  color: #666;
+}
+.am-tabs-bar-title{
+  height:84rpx;
+  line-height:84rpx;
+  box-sizing:border-box;
+  position:relative;
+  border-bottom-width:4rpx;
+  border-bottom-style:solid;
+  border-bottom-color:transparent;
+  text-align: center;
+  width: 90%;
+}
+.am-tabs-bar-title.active {
+  font-weight: bold;
+  border-bottom-color: #e60000;
+  color: #333;
+}
+.am-tabs-bar-badge.dot{
+  position:absolute;
+  top: 18rpx;
+  right:0;
+  transform:translateX(16rpx)
+}
+.am-tabs-bar-badge.text{
+  position:absolute;
+  top:18rpx;
+  right:4rpx;
+  transform:translateX(100%);
+  height:32rpx
+}
+.am-tabs-slides{
+  display:flex;
+  transition-duration:.5s
+}
+

@@ -1,0 +1,15 @@
+<view class="container">
+  <m-nav size="small" title="{{ i18n.paymentsHistory.appBarTitle }}" />
+
+  <sectioned-list sections="{{ sections }}" isLoading="{{isLoading}}" emptyIcon="/assets/illustrations/savings-grey.svg" emptyTitle="No payments to show"/>
+</view>
+
+<toast
+  content="{{toastContent}}" 
+  duration="{{5000}}" 
+  showMask="{{false}}" 
+  visible="{{showToast}}"
+  onClose="onToastClose" 
+  data-index="1"
+  type="{{toastType}}"
+/>

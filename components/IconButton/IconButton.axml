@@ -1,0 +1,43 @@
+<view a:if="{{isVertical}}">
+  <view 
+    class="image-container" 
+    style="border-color: {{borderColor}}; height: {{height * 2}}rpx; width: {{width * 2}}rpx;"
+    onTap="onTap">
+    <icon 
+      a:if="{{ !isLoading }}" 
+      iconName="{{iconName}}" 
+      width="{{width}}" 
+      height="{{height}}"
+      otherStyles="{{iconExtraStyle}}"
+      />
+    <view a:else class="loading-container">
+      <loading 
+        color="{{borderColor}}" 
+        style="height: {{height * 2}}rpx; width: {{width * 2}}rpx"/>
+    </view>
+  </view>
+  <view 
+    class="text-container" 
+    style="width: {{width * 2}}rpx;">
+    <text>{{label}}</text>
+  </view>
+</view>
+<view a:else>
+  <view 
+    class="image-container-horizontal" 
+    style="border-color: {{borderColor}};"
+    onTap="onTap">
+    <icon 
+      a:if="{{ !isLoading }}" 
+      iconName="{{iconName}}" 
+      width="{{width}}" 
+      height="{{height}}" 
+      otherStyles="margin-right: 15rpx; {{horizontalIconExtraStyle}}"  />
+    <view a:else class="loading-container-horizontal">
+      <loading 
+        color="{{borderColor}}" 
+        style="height: {{height * 2}}rpx; width: {{width * 2}}rpx"/>
+    </view>
+    <text class="horizontal-text">{{label}}</text>
+  </view>
+</view>

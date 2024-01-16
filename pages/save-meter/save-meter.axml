@@ -1,0 +1,55 @@
+<view class="container">
+  <m-nav size="small" title="{{ i18n.saveMeter.appBarTitle }}"/>
+
+  <view class="body">
+    <view class="card">
+      <view class="content">
+        <view class="info-message">
+          {{ i18n.addFavourite.selectFavouriteLabel }}
+        </view>
+        <view class="mb-16">
+          <input-mpesa
+            field="meterName"
+            label="{{ i18n.addFavourite.meterNameFld }}"
+            description="{{ meterName.length + '/20' }}"
+            descriptionHero=""
+            value="{{ meterName }}"
+            onInput="handleInputChange"
+            onValidation="meterNameValidator"
+          />
+        </view>
+        <view class="mb-16">
+          <input-mpesa
+            field="meterNo"
+            type="number"
+            label="{{ i18n.addFavourite.meterNumberFld }}"
+            description="{{ meterNo.length + '/11' }}"
+            value="{{ meterNo }}"
+            onInput="handleInputChange"
+            onValidation="meterNoValidator"
+          />
+        </view>
+      </view>
+
+      <view class="action-section m-flex m-flex-column p-16">
+        <m-button 
+          onTap="onSave" 
+          disabled="{{ !isMeterNameValid || !isMeterNoValid  }}"
+          loading="{{isLoading}}"
+          >
+          {{ i18n.saveMeter.primaryBtn }}
+        </m-button>
+        <view class="my-8"/>
+        <m-button 
+          type="secondary" 
+          onTap="onCancel" 
+          loading="{{isLoading}}"
+        >
+          {{ i18n.saveMeter.secondaryBtn }}
+        </m-button>
+      </view>
+    </view>
+  </view>
+</view>
+
+<error-modal ref="errorModalRef" />

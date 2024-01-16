@@ -1,0 +1,22 @@
+<view id="{{value}}" class="carousel-item {{ isSmallCard ? 'carousel-item-small' : '' }}" onTap="onTap" data-value="{{value}}" style="{{cardExtraStyle}}">
+  <view class="top-row m-flex p-16 {{ !bottomText ? 'top-row-single': ''}}" style="background: {{ topRowBackground }};">
+    <view class="m-flex m-flex-column top-row-wrapper">
+      <m-shimmer a:if="{{ isLoading }}" style="height: {{onlyTitle ? '49rpx' : '30rpx'}}; width: 90%;" />
+      <view a:else class="top-title text-overflow" style="{{ topTitleExtraStyle }}">{{ topTitle }}</view>
+      <m-shimmer a:if="{{ isLoading && !onlyTitle }}" class="mt-6" style="height: 20rpx; width: 260rpx;" />
+      <view a:elif="{{ !onlyTitle }}" class="top-description text-overflow {{ !bottomText ? 'multi-line': ''}}" style="{{ topDescriptionExtraStyle }}">{{ topDescription }}</view>
+    </view>
+    <block a:if="{{ buttonText }}">
+      <view class="m-flex m-justify-end m-align-center text-overflow fit-content" style="{{ buttonExtraStyle }}">
+        <!-- <m-shimmer a:if="{{ isLoading }}" class="mt-6" style="height: 52rpx; width: 160rpx; border-radius: 40rpx;" /> -->
+        <view a:if="{{ !isLoading }}" class="badge m-body ml-16 body-14 inverted text-overflow max-width-120" style="{{ buttonTextExtraStyle }}">{{ buttonText }}</view>
+      </view>
+    </block>
+  </view>
+  <block a:if="{{ bottomText || isLoading }}">
+    <view class="bottom-row p-16" style="background: {{ bottomRowBackground }};">
+      <m-shimmer a:if="{{ isLoading }}" style="height: 60rpx; width: 100%;" />
+      <view a:else class="bottom-text text-overflow" style="{{ bottomTextExtraStyle }}">{{ bottomText }}</view>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,111 @@
+.changeColor {
+  font-size: 30px;
+  color: #f32600;
+}
+
+.vm_page {
+  background-color: white;
+  margin: 10rpx;
+  padding: 30rpx;
+  border-radius: 10rpx;
+}
+
+
+
+.ticket {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+  padding: 16px;
+	filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.16));
+  overflow:hidden;
+  flex: 1;
+}
+
+.top {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 60rpx;
+  border-radius: 15rpx 15rpx 0 0;
+}
+
+.top::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  border-top: 2px dashed #eee;
+  left: 20px;
+  right: 20px;
+  bottom: 0px;
+  z-index: 2;
+}
+
+.middle {
+  position: relative;
+  height: 40px;
+  flex-shrink: 0;
+  margin: 0 20px;
+  background-color: #fff;
+  border:none;
+}
+
+.middle::before,
+.middle::after {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  border: 10px solid transparent;
+  border-top-color: #fff;
+  border-right-color: #fff;
+  transform: translate(-50%, -50%) rotate(45deg);
+  border-radius: 50%;
+  top: 50%;
+  box-sizing: content-box;
+}
+
+.middle::before {
+  left: -20px;
+  box-sizing: content-box;
+}
+
+.middle::after {
+  right: -80px;
+  transform: translate(-50%, -50%) rotate(225deg);
+  box-sizing: content-box;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: #fff;
+  padding: 20rpx 32rpx 32rpx 32rpx;
+  border-radius: 0 0 15rpx 15rpx;
+}
+
+.fieldsContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.descriptionText {
+  font-family: VodafoneRg-Regular;
+  font-size: 32rpx;
+  line-height: 36rpx;
+  color: #666666;
+  margin: auto;
+  margin-bottom: 16rpx;
+}
+.titleText {
+  font-family: VodafoneRg-Regular;
+  font-size: 80rpx;
+  font-weight: 700;
+  line-height: 92rpx;
+  color: #e60000;
+  margin: auto;
+}

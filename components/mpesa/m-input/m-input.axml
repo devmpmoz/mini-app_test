@@ -1,0 +1,26 @@
+<import-sjs name="element" from="/utils/element.sjs"/>
+
+<view class="{{ element.classAttr('m-input', className) }}">
+  <view class="{{inputTypeClass}}">
+    <label class="m-input__label">{{label}}</label>
+    <view class="m-input__container">
+      <view class="m-input__wrapper">
+        <view class="m-input__icon-inner-left">
+          <slot name="iconInnerLeft" />
+        </view>
+        <input value="{{inputValue}}" type="{{type}}" maxlength="{{maxlength}}" placeholder="{{placeholder}}" onFocus="onInputFocus" onBlur="onInputBlur" onInput="onInput" class="{{inputCssClass}}" />
+        <view a:if="{{showClearIcon}}" class="m-input__clear-button" onTap="onClearIconTap">
+          <image src="../../mpesa/assets/close.svg"/>
+        </view>
+        <image a:if="{{showLoader}}" class="m-input__loader" src="../../mpesa/assets/spin.svg"/>
+      </view>
+      <view a:if="{{helperMsg || errorMsg}}">
+        <text a:if="{{!errorMsg}}" class="m-input__helper-default">{{helperMsg}}</text>
+        <text class="m-input__helper-error">{{errorMsg}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="m-input__icon-outter-right">
+    <slot name="iconOutterRight" />
+  </view>
+</view>
