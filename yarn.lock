@@ -20,10 +20,10 @@
   resolved "https://registry.yarnpkg.com/@mini-types/my/-/my-3.0.9.tgz#54c5c60c79a11cf175a9aa0630240498b47f284a"
   integrity sha512-gkzkeb9dJN3qHKFZ89yTJCp7xxQG11vbnCQIOHQ9AK1GYO0SC31w9bnVB28iZQzRgo/M6hP2YW6wk3SRLXh+yg==
 
-antd-mini@1.10.5:
-  version "1.10.5"
-  resolved "https://registry.yarnpkg.com/antd-mini/-/antd-mini-1.10.5.tgz#2485f0a2728d0846af99050d7ab527eed950879e"
-  integrity sha512-dJz5GElcmun8XwZLCRzFwb+cIS9wdWkOF1bdTSRpXgwavkcgNDo+D2GbNwwA8S4r0KuahHAMH3M4vvLVU58qcA==
+antd-mini@1.10.6:
+  version "1.10.6"
+  resolved "https://registry.yarnpkg.com/antd-mini/-/antd-mini-1.10.6.tgz#26ffe7ea8fa9175c552dfc55313c438b37a76a38"
+  integrity sha512-GHA4ipWaoK7Jrz5F+3ePYKuevK8yZ4YlxsOuLxmcT1pqmhAF7WS7DrgJjOtZ4I48RZPnzfsc3c7k0vUUOqC2Cw==
   dependencies:
     "@mini-types/alipay" "^3.0.5"
     async-validator "^4.0.7"
